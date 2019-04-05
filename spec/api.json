@@ -1,0 +1,29 @@
+{
+  "routes": [
+    {
+      "name": "getDeviceByUuid",
+      "method": "GET",
+      "path": "/devices/:deviceUuid",
+      "description": "Gets a device by uuid",
+      "link": "https://google.com"
+    },
+    {
+      "name": "createDevice",
+      "method": "POST",
+      "path": "/devices",
+      "description": "Creates a new device",
+      "link": "https://google.com"
+    },
+    {
+      "name": "getDevices",
+      "method": "GET",
+      "path": "/devices",
+      "query": {
+        "limit": "The number of devices to return",
+        "afterUuid": "The uuid of the device after which you want to return"
+      },
+      "description": "Gets a list of devices",
+      "link": "https://google.com"
+    }
+  ]
+}
