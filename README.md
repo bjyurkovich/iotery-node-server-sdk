@@ -64,7 +64,7 @@ This SDK simply wraps the [REST API](https://somelink_to_swagger_docs), so more 
 _returns_ Promise
 Gets a device by uuid
 
-#### `createDevice({}, {see [API](https://google.com) for fields}, )`
+#### `createDevice({}, {data}, )`
 
 _returns_ Promise
 Creates a new device
