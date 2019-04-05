@@ -59,26 +59,25 @@ For a tutorial on setting up a full stack system in 15 minutes using iotery.io, 
 
 This SDK simply wraps the [REST API](https://somelink_to_swagger_docs), so more information and specifics can be found there.
 
-    #### `getDeviceByUuid({deviceUuid: "deviceUuid"})`
-    *returns* Promise
-    Gets a device by uuid
+#### `getDeviceByUuid({deviceUuid: "deviceUuid"})`
 
+_returns_ Promise
+Gets a device by uuid
 
+#### `createDevice({}, {see [API](https://google.com) for fields}, )`
 
-    #### `createDevice({}, {see [API](https://google.com) for fields}, )`
-    *returns* Promise
-    Creates a new device
+_returns_ Promise
+Creates a new device
 
+#### `getDevices({}, opts)`
 
-
-    #### `getDevices({}, opts)`
-    *returns* Promise
-    Gets a list of devices
-    *options* (`opts`) object
-    |    field    | description |
-    |:-----------:|:-----------:|
-    | limit  | The number of devices to return |
-    | afterUuid  | The uuid of the device after which you want to return |
+_returns_ Promise
+Gets a list of devices
+_options_ (`opts`) object
+| field | description |
+|:-----------:|:-----------:|
+| limit | The number of devices to return |
+| afterUuid | The uuid of the device after which you want to return |
 
 ## Contributing
 
