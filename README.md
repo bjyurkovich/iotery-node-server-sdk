@@ -74,9 +74,10 @@ Creates a new device
 _returns_ Promise
 Gets a list of devices
 _options_ (`opts`) object
-| field | description |
-|:-----------:|:-----------:|
-| limit | The number of devices to return |
+
+|   field   |                      description                      |
+| :-------: | :---------------------------------------------------: |
+|   limit   |            The number of devices to return            |
 | afterUuid | The uuid of the device after which you want to return |
 
 ## Contributing
