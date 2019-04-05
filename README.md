@@ -35,6 +35,8 @@ async function main() {
     }
   );
 }
+
+main()
 ```
 
 > The above code connects you to the iotary.io platform, creates a device type, and a device, then retrieves all your devices.
