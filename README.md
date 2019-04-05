@@ -62,6 +62,7 @@ This SDK simply wraps the [REST API](https://somelink_to_swagger_docs), so more 
 #### `getDeviceByUuid({deviceUuid: "deviceUuid"})`
 
 _returns_ Promise
+
 Gets a device by uuid
 
 #### `createDevice({}, {data}, )`
@@ -72,7 +73,9 @@ Creates a new device
 #### `getDevices({}, opts)`
 
 _returns_ Promise
+
 Gets a list of devices
+
 _options_ (`opts`) object
 
 |   field   |                      description                      |
