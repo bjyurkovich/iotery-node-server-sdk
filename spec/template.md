@@ -54,7 +54,7 @@ For a tutorial on setting up a full stack system in 15 minutes using iotery.io, 
 
 ## API
 
-This SDK simply wraps the [REST API](https://somelink_to_swagger_docs), so more information and specifics can be found there. Since the API is a wrapper around the REST API, the syntax is standard for each of the Create, Read, Update, and Delete operations on iotery.io resources.
+This SDK simply wraps the [REST API](https://somelink_to_swagger_docs), so more information and specifics can be found there. Since the API is a wrapper around the REST API, the syntax is standard for each of the Create, Read, Update, and Delete operations on iotery.io resources. All methods return a `Promise`.
 
 ### Creating Resources
 
