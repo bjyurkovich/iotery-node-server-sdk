@@ -83,7 +83,7 @@ The available resource creation methods are
 |    `methodName`    | `input` | link |  `description`
 |:-----------:|:-----------:|:-----------:|:-----------:|
 | createDeviceType |  | https://iotery.io/v1/docs#createDeviceType | Creates a new device type |
-| createDevice | device-types,deviceTypeUuid | https://iotery.io/v1/docs#createDevice | Creates a new device with a given device type |
+| createDevice | deviceTypeUuid | https://iotery.io/v1/docs#createDevice | Creates a new device with a given device type |
 
 ### Reading Resources
 

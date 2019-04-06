@@ -40,7 +40,7 @@
     {
       "name": "createDevice",
       "method": "POST",
-      "path": "/device-types/:deviceTypeUuid",
+      "path": "/device-types/:deviceTypeUuid/devices",
       "description": "Creates a new device with a given device type",
       "link": "https://iotery.io/v1/docs#createDevice"
     }
