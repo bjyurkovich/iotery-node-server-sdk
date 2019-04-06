@@ -1,29 +1,48 @@
 {
   "routes": [
     {
-      "name": "getDeviceByUuid",
-      "method": "GET",
-      "path": "/devices/:deviceUuid",
-      "description": "Gets a device by uuid",
-      "link": "https://google.com"
+      "name": "createDeviceType",
+      "method": "POST",
+      "path": "/device-types",
+      "description": "Creates a new device type",
+      "link": "https://iotery.io/v1/docs#createDeviceType"
     },
+    {
+      "name": "getDeviceTypes",
+      "method": "GET",
+      "path": "/device-types",
+      "description": "Gets all device types",
+      "query": { "limit": "Number of device types to get" },
+      "link": "https://iotery.io/v1/docs#getDeviceTypes"
+    },
+    {
+      "name": "getDeviceTypeByUuid",
+      "method": "GET",
+      "path": "/device-types/:deviceTypeUuid",
+      "description": "Gets a device type by uuid",
+      "link": "https://iotery.io/v1/docs#getDeviceyTypeByUuid"
+    },
+    {
+      "name": "updateDeviceType",
+      "method": "PATCH",
+      "path": "/device-types/:deviceTypeUuid",
+      "description": "Updates a device type by uuid",
+      "link": "https://iotery.io/v1/docs#updateDeviceType"
+    },
+    {
+      "name": "deleteDeviceType",
+      "method": "DELETE",
+      "path": "/device-types/:deviceTypeUuid",
+      "description": "Deletes a device type by uuid",
+      "link": "https://iotery.io/v1/docs#deleteDeviceType"
+    },
+
     {
       "name": "createDevice",
       "method": "POST",
-      "path": "/devices",
-      "description": "Creates a new device",
-      "link": "https://google.com"
-    },
-    {
-      "name": "getDevices",
-      "method": "GET",
-      "path": "/devices",
-      "query": {
-        "limit": "The number of devices to return",
-        "afterUuid": "The uuid of the device after which you want to return"
-      },
-      "description": "Gets a list of devices",
-      "link": "https://google.com"
+      "path": "/:device-types/:deviceTypeUuid",
+      "description": "Creates a new device with a given device type",
+      "link": "https://iotery.io/v1/docs#createDevice"
     }
   ]
 }

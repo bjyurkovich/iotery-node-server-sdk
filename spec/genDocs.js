@@ -10,51 +10,71 @@ let patches = [];
 let posts = [];
 let deletes = [];
 
-let docs = api.routes
-  .map(r => {
-    let args = "";
-    let params, out;
-    switch (r.method) {
-      case "GET":
-        params = findArguments(r.path);
-        gets.push({ ...r, ...params });
-        break;
-      case "POST":
-        params = findArguments(r.path);
-        posts.push({ ...r, ...params });
-        break;
-      case "PATCH":
-        params = findArguments(r.path);
-        patches.push({ ...r, ...params });
-        break;
-      case "DELETE":
-        params = findArguments(r.path);
-        deletes.push({ ...r, ...params });
-        break;
-    }
+let docs = api.routes.map(r => {
+  let args = "";
+  let params, out;
+  switch (r.method) {
+    case "GET":
+      params = findArguments(r.path);
+      gets.push({ ...r, params });
+      break;
+    case "POST":
+      params = findArguments(r.path);
+      posts.push({ ...r, params });
+      break;
+    case "PATCH":
+      params = findArguments(r.path);
+      patches.push({ ...r, params });
+      break;
+    case "DELETE":
+      params = findArguments(r.path);
+      deletes.push({ ...r, params });
+      break;
+  }
+});
 
-    let opts = ``;
-    if (r.query) {
-      opts = Object.keys(r.query)
-        .map(
-          q => `| ${q}  | ${r.query[q]} |
-    `
-        )
-        .join("");
-      opts = `|    field    | description |
-    |:-----------:|:-----------:|
-    ${opts}`;
-    }
+let headers = `|    \`methodName\`    | \`input\` | link |  \`description\`
+|:-----------:|:-----------:|:-----------:|:-----------:|`;
 
-    return `
-    #### \`${r.name}${args}\`
-    *returns* Promise
-    ${r.description}
-    ${opts.length > 0 ? `*options* (\`opts\`) object` : ""}
-    ${opts}`;
-  })
+let gs = gets
+  .map(
+    g =>
+      `| ${g.name} | ${g.params.args.join(",")} | ${g.link} | ${
+        g.description
+      } |`
+  )
   .join("\n");
 
-template = template.replace("[[INSERT_DOCS]]", docs);
+let pos = posts
+  .map(
+    g =>
+      `| ${g.name} | ${g.params.args.join(",")} | ${g.link} | ${
+        g.description
+      } |`
+  )
+  .join("\n");
+
+let pas = patches
+  .map(
+    g =>
+      `| ${g.name} | ${g.params.args.join(",")} | ${g.link} | ${
+        g.description
+      } |`
+  )
+  .join("\n");
+
+let dels = deletes
+  .map(
+    g =>
+      `| ${g.name} | ${g.params.args.join(",")} | ${g.link} | ${
+        g.description
+      } |`
+  )
+  .join("\n");
+
+template = template.replace("[[GETS]]", [headers, gs].join("\n"));
+template = template.replace("[[POSTS]]", [headers, pos].join("\n"));
+template = template.replace("[[PATCHES]]", [headers, pas].join("\n"));
+template = template.replace("[[DELETES]]", [headers, dels].join("\n"));
 
 fs.writeFileSync(__dirname + "/" + "../README.md", template);
