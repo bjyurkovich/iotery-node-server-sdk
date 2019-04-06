@@ -79,8 +79,8 @@ The available resource creation methods are
 
 |    `methodName`    | `input` | link |  `description`
 |:-----------:|:-----------:|:-----------:|:-----------:|
-| createDeviceType |  | https://iotery.io/v1/docs#createDeviceType | Creates a new device type |
-| createDevice | deviceTypeUuid | https://iotery.io/v1/docs#createDevice | Creates a new device with a given device type |
+| createDeviceType |  | [link](https://iotery.io/v1/docs#createDeviceType) | Creates a new device type |
+| createDevice | deviceTypeUuid | [link](https://iotery.io/v1/docs#createDevice) | Creates a new device with a given device type |
 
 ### Reading Resources
 
@@ -102,8 +102,8 @@ The available resource reading methods are
 
 |    `methodName`    | `input` | link |  `description`
 |:-----------:|:-----------:|:-----------:|:-----------:|
-| getDeviceTypes |  | https://iotery.io/v1/docs#getDeviceTypes | Gets all device types |
-| getDeviceTypeByUuid | deviceTypeUuid | https://iotery.io/v1/docs#getDeviceyTypeByUuid | Gets a device type by uuid |
+| getDeviceTypes |  | [link](https://iotery.io/v1/docs#getDeviceTypes) | Gets all device types |
+| getDeviceTypeByUuid | deviceTypeUuid | [link](https://iotery.io/v1/docs#getDeviceyTypeByUuid) | Gets a device type by uuid |
 
 ### Updating Resources
 
@@ -128,7 +128,7 @@ The available update methods are
 
 |    `methodName`    | `input` | link |  `description`
 |:-----------:|:-----------:|:-----------:|:-----------:|
-| updateDeviceType | deviceTypeUuid | https://iotery.io/v1/docs#updateDeviceType | Updates a device type by uuid |
+| updateDeviceType | deviceTypeUuid | [link](https://iotery.io/v1/docs#updateDeviceType) | Updates a device type by uuid |
 
 ### Deleting Resources
 
@@ -150,7 +150,7 @@ The available resource deleting methods are
 
 |    `methodName`    | `input` | link |  `description`
 |:-----------:|:-----------:|:-----------:|:-----------:|
-| deleteDeviceType | deviceTypeUuid | https://iotery.io/v1/docs#deleteDeviceType | Deletes a device type by uuid |
+| deleteDeviceType | deviceTypeUuid | [link](https://iotery.io/v1/docs#deleteDeviceType) | Deletes a device type by uuid |
 
 ## Contributing
 

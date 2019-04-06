@@ -1,15 +1,34 @@
-const expect = require("chai").expect;
+const chai = require("chai");
+const expect = chai.expect;
+const chaiAsPromised = require("chai-as-promised");
 const api = require("../spec/api.json");
 const { findArguments } = require("../utils");
+const fetch = require("node-fetch");
 const _ = require("lodash");
 let iotery;
+
+chai.use(chaiAsPromised);
 
 describe("Node iotery SDK tests", function() {
   it("should import the iotery module", async () => {
     iotery = require("../")("iotery-api-mock-key", {
       baseUrl: "http://localhost:3005"
     });
-    expect(iotery).to.have.property("createDevice");
+    return expect(iotery).to.have.property("createDevice");
+  });
+
+  it("should check for the mock server to be running", async () => {
+    let r;
+    try {
+      r = await fetch("http://localhost:3005/device-types", {
+        method: "GET",
+        headers: { "Content-Type": "application/json" }
+      });
+    } catch (err) {
+      throw Error("Mock Server not running");
+    }
+
+    return expect(await r.json()).to.have.property("params");
   });
 
   it("should get a device", async () => {
@@ -18,6 +37,7 @@ describe("Node iotery SDK tests", function() {
     });
 
     expect(device.params.deviceTypeUuid).to.equal("duuid");
+    return;
   });
 
   it("should test all routes", async () => {
@@ -36,5 +56,6 @@ describe("Node iotery SDK tests", function() {
 
       expect(_.isEqual(input, res.params)).to.equal(true);
     });
+    return;
   });
 });

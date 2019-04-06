@@ -10,6 +10,7 @@ let patches = [];
 let posts = [];
 let deletes = [];
 
+//process appropriate methods
 let docs = api.routes.map(r => {
   let args = "";
   let params, out;
@@ -33,13 +34,15 @@ let docs = api.routes.map(r => {
   }
 });
 
+//set up table header
 let headers = `|    \`methodName\`    | \`input\` | link |  \`description\`
 |:-----------:|:-----------:|:-----------:|:-----------:|`;
 
+// make the table rows
 let gs = gets
   .map(
     g =>
-      `| ${g.name} | ${g.params.args.join(",")} | ${g.link} | ${
+      `| ${g.name} | ${g.params.args.join(",")} | [link](${g.link}) | ${
         g.description
       } |`
   )
@@ -48,7 +51,7 @@ let gs = gets
 let pos = posts
   .map(
     g =>
-      `| ${g.name} | ${g.params.args.join(",")} | ${g.link} | ${
+      `| ${g.name} | ${g.params.args.join(",")} | [link](${g.link}) | ${
         g.description
       } |`
   )
@@ -57,7 +60,7 @@ let pos = posts
 let pas = patches
   .map(
     g =>
-      `| ${g.name} | ${g.params.args.join(",")} | ${g.link} | ${
+      `| ${g.name} | ${g.params.args.join(",")} | [link](${g.link}) | ${
         g.description
       } |`
   )
@@ -66,7 +69,7 @@ let pas = patches
 let dels = deletes
   .map(
     g =>
-      `| ${g.name} | ${g.params.args.join(",")} | ${g.link} | ${
+      `| ${g.name} | ${g.params.args.join(",")} | [link](${g.link}) | ${
         g.description
       } |`
   )
