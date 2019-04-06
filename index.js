@@ -74,20 +74,44 @@ api.routes.forEach(e => {
       };
       break;
     case "PATCH":
-      Iotery.prototype[e.name] = async function(params, data) {
+      Iotery.prototype[e.name] = async function(params, data, opts) {
         let out = findParamArguments(e.path, params);
+        let res = await fetch(
+          `${this._baseUrl}${out.hydratedPath}${generateQueryString(opts)}`,
+          {
+            method: e.method,
+            headers: {
+              "X-API-Key": this._apiKey,
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+          }
+        );
+        if (res.status >= 400) {
+          throw res.error;
+        }
 
-        return await {
-          path: `${this._baseUrl}${out.hydratedPath}`,
-          data
-        };
+        return await res.json();
       };
       break;
     case "DELETE":
-      Iotery.prototype[e.name] = async function(params) {
+      Iotery.prototype[e.name] = async function(params, opts) {
         let out = findParamArguments(e.path, params);
+        let res = await fetch(
+          `${this._baseUrl}${out.hydratedPath}${generateQueryString(opts)}`,
+          {
+            method: e.method,
+            headers: {
+              "X-API-Key": Iotery.prototype._apiKey,
+              "Content-Type": "application/json"
+            }
+          }
+        );
+        if (res.status >= 400) {
+          throw res.error;
+        }
 
-        return await `${this._baseUrl}${out.hydratedPath}`;
+        return await res.json();
       };
       break;
   }

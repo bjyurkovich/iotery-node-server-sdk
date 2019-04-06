@@ -1,4 +1,7 @@
 const expect = require("chai").expect;
+const api = require("../spec/api.json");
+const { findArguments } = require("../utils");
+const _ = require("lodash");
 let iotery;
 
 describe("Node iotery SDK tests", function() {
@@ -10,71 +13,28 @@ describe("Node iotery SDK tests", function() {
   });
 
   it("should get a device", async () => {
-    device = await iotery.getDeviceByUuid({
-      deviceUuid: "duuid"
+    device = await iotery.getDeviceTypeByUuid({
+      deviceTypeUuid: "duuid"
     });
 
-    expect(device.params.deviceUuid).to.equal("duuid");
+    expect(device.params.deviceTypeUuid).to.equal("duuid");
+  });
+
+  it("should test all routes", async () => {
+    api.routes.forEach(async e => {
+      let { args } = findArguments(e.path);
+      let input = {};
+      args.forEach(a => (input[a] = `${a}-${e.method}-${e.name}`));
+
+      let res = await eval(
+        `iotery.${e.name}(${JSON.stringify(input)}, ${
+          e.method === "POST" || e.method === "PATCH"
+            ? JSON.stringify({ data: "some data" })
+            : "{}"
+        })`
+      );
+
+      expect(_.isEqual(input, res.params)).to.equal(true);
+    });
   });
 });
-
-// (async () => {
-//   let device = await iotery.createDevice(null, {
-//     deviceTypeUuid: "asdf"
-//   });
-
-//   device = await iotery.getDeviceByUuid({
-//     deviceUuid: "duuid",
-//     accountUuid: "auuid"
-//   });
-
-//   console.log(device);
-// })();
-
-// const iotery = require("iotery-server-sdk")("YOUR_IOTERY_API_KEY_HERE");
-
-// async function main() {
-//   let thermalSensorDeviceType = await iotery.createDeviceType(null, {
-//     enum: "THERMAL_SENSOR",
-//     name: "Thermal Sensor Type"
-//   });
-
-//   let device = await iotery.createDevice(null, {
-//     name: "My Device",
-//     deviceTypeUuid: thermalSensorDeviceType.uuid
-//   });
-
-//   let temperatureDataType = await iotery.createDataType(
-//     { deviceTypeUuid: thermalSensorDeviceType.uuid },
-//     {
-//       name: "Temperature",
-//       enum: "TEMPERATURE",
-//       units: "C",
-//       isNumber: true
-//     }
-//   );
-
-//   let data = await iotery.createDataRecord(
-//     { deviceUuid: device.uuid },
-//     {
-//       packets: [
-//         {
-//           deviceUuid: device.uuid,
-//           deviceTypeUuid: thermalSensorDeviceType.uuid,
-//           timestamp: new Date().valueOf(),
-//           temperature: 23.5
-//         }
-//       ]
-//     }
-//   );
-// }
-
-// let temperatureDataType = await iotery.createDataType(
-//   { deviceTypeUuid: thermalSensorDeviceType.uuid },
-//   {
-//     name: "Temperature",
-//     enum: "TEMPERATURE",
-//     units: "C",
-//     isNumber: true
-//   }
-// );
