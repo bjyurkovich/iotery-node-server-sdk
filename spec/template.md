@@ -8,13 +8,13 @@ Setup your free account on [iotery.io]() and go to your [settings dashboard]() t
 
 After you get your key, install the SDK:
 
-```
+```bash
 npm install iotery-server-sdk
 ```
 
 And finally, some simple example usage:
 
-```
+```js
 const iotery = require("iotery-server-sdk")("YOUR_IOTERY_API_KEY_HERE");
 
 async function main() {
@@ -28,12 +28,9 @@ async function main() {
     deviceTypeUuid: thermalSensorDeviceType.uuid
   });
 
-  let devices = await iotery.getDevices(
-    null,
-    {
-        limit: 10
-    }
-  );
+  let devices = await iotery.getDevices(null, {
+    limit: 10
+  });
 }
 ```
 
@@ -41,7 +38,7 @@ async function main() {
 
 Next, you might want to create a data type for the the device type you created...here's an example snippet:
 
-```
+```js
 let temperatureDataType = await iotery.createDataType(
   { deviceTypeUuid: thermalSensorDeviceType.uuid },
   {

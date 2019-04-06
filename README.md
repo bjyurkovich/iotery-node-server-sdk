@@ -77,10 +77,10 @@ where `createDevice` maps to `methodName`, `deviceTypeUuid` maps to `input`, and
 
 The available resource creation methods are
 
-|   `methodName`   |    `input`     |                    link                    |                 `description`                 |
-| :--------------: | :------------: | :----------------------------------------: | :-------------------------------------------: |
-| createDeviceType |                | https://iotery.io/v1/docs#createDeviceType |           Creates a new device type           |
-|   createDevice   | deviceTypeUuid |   https://iotery.io/v1/docs#createDevice   | Creates a new device with a given device type |
+|    `methodName`    | `input` | link |  `description`
+|:-----------:|:-----------:|:-----------:|:-----------:|
+| createDeviceType |  | https://iotery.io/v1/docs#createDeviceType | Creates a new device type |
+| createDevice | deviceTypeUuid | https://iotery.io/v1/docs#createDevice | Creates a new device with a given device type |
 
 ### Reading Resources
 
@@ -100,9 +100,9 @@ where `getDeviceByUuid` maps to `methodName`, `deviceUuid` maps to `input`, and 
 
 The available resource reading methods are
 
-|    `methodName`     |    `input`     |                      link                      |       `description`        |
-| :-----------------: | :------------: | :--------------------------------------------: | :------------------------: |
-|   getDeviceTypes    |                |    https://iotery.io/v1/docs#getDeviceTypes    |   Gets all device types    |
+|    `methodName`    | `input` | link |  `description`
+|:-----------:|:-----------:|:-----------:|:-----------:|
+| getDeviceTypes |  | https://iotery.io/v1/docs#getDeviceTypes | Gets all device types |
 | getDeviceTypeByUuid | deviceTypeUuid | https://iotery.io/v1/docs#getDeviceyTypeByUuid | Gets a device type by uuid |
 
 ### Updating Resources
@@ -126,8 +126,8 @@ where `updateDevice` maps to `methodName`, `deviceUuid` maps to `input`, and `na
 
 The available update methods are
 
-|   `methodName`   |    `input`     |                    link                    |         `description`         |
-| :--------------: | :------------: | :----------------------------------------: | :---------------------------: |
+|    `methodName`    | `input` | link |  `description`
+|:-----------:|:-----------:|:-----------:|:-----------:|
 | updateDeviceType | deviceTypeUuid | https://iotery.io/v1/docs#updateDeviceType | Updates a device type by uuid |
 
 ### Deleting Resources
@@ -148,8 +148,8 @@ where `deleteDevice` maps to `methodName` and `deviceUuid` maps to `input` in th
 
 The available resource deleting methods are
 
-|   `methodName`   |    `input`     |                    link                    |         `description`         |
-| :--------------: | :------------: | :----------------------------------------: | :---------------------------: |
+|    `methodName`    | `input` | link |  `description`
+|:-----------:|:-----------:|:-----------:|:-----------:|
 | deleteDeviceType | deviceTypeUuid | https://iotery.io/v1/docs#deleteDeviceType | Deletes a device type by uuid |
 
 ## Contributing
