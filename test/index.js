@@ -41,7 +41,7 @@ describe("Node iotery SDK tests", function() {
   });
 
   it("should test all routes", async () => {
-    api.routes.forEach(async e => {
+    for (e of api.routes) {
       let { args } = findArguments(e.path);
       let input = {};
       args.forEach(a => (input[a] = `${a}-${e.method}-${e.name}`));
@@ -53,9 +53,9 @@ describe("Node iotery SDK tests", function() {
             : "{}"
         })`
       );
-
-      expect(_.isEqual(input, res.params)).to.equal(true);
-    });
-    return;
+      return expect(_.isEqual(input, res.params)).to.equal(true);
+    }
   });
+
+  //TODO: test errors once error handling is implemented in API
 });
