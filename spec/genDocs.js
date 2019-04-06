@@ -5,6 +5,11 @@ const { findArguments, generateQueryString } = require("../utils");
 
 let template = fs.readFileSync(__dirname + "/" + "template.md", "utf8");
 
+let gets = [];
+let patches = [];
+let posts = [];
+let deletes = [];
+
 let docs = api.routes
   .map(r => {
     let args = "";
@@ -12,27 +17,19 @@ let docs = api.routes
     switch (r.method) {
       case "GET":
         params = findArguments(r.path);
-        out = params.args.map(e => `${e}: "${e}"`);
-        args = `({${out.join(", ")}}${r.query ? `, opts` : ``})`;
+        gets.push({ ...r, ...params });
         break;
       case "POST":
         params = findArguments(r.path);
-        out = params.args.map(e => `${e}: "${e}"`);
-        args = `({${out.join(", ")}}, {see [API](${r.link}) for fields}, ${
-          r.query ? `, opts` : ``
-        })`;
+        posts.push({ ...r, ...params });
         break;
       case "PATCH":
         params = findArguments(r.path);
-        out = params.args.map(e => `${e}: "${e}"`);
-        args = `({${out.join(", ")}}, {see [API](${r.link}) for fields}, ${
-          r.query ? `, opts` : ``
-        })`;
+        patches.push({ ...r, ...params });
         break;
       case "DELETE":
         params = findArguments(r.path);
-        out = params.args.map(e => `${e}: "${e}"`);
-        args = `({${out.join(", ")}}${r.query ? `, opts` : ``})`;
+        deletes.push({ ...r, ...params });
         break;
     }
 
