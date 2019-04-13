@@ -1,5 +1,6 @@
 const api = require("./spec/api.json");
 const { findParamArguments, generateQueryString } = require("./utils");
+
 const fetch = require("node-fetch");
 
 function Iotery(apiKey, opts) {

@@ -32,11 +32,11 @@ describe("Node iotery SDK tests", function() {
   });
 
   it("should get a device", async () => {
-    device = await iotery.getDeviceTypeByUuid({
-      deviceTypeUuid: "duuid"
+    device = await iotery.getDevice({
+      deviceUuid: "duuid"
     });
 
-    expect(device.params.deviceTypeUuid).to.equal("duuid");
+    expect(device.params.deviceUuid).to.equal("duuid");
     return;
   });
 

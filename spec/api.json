@@ -1,48 +1,551 @@
 {
+  "version": "1.0.0",
   "routes": [
     {
+      "path": "/health-check",
+      "name": "getHealthCheckResult",
+      "method": "GET",
+      "description": "Get the result of a server health check.",
+      "link": "https://iotery.io/v1/account-managers#tag/Iotery-Health Check"
+    },
+    {
+      "path": "/account-managers",
+      "name": "createAccountManager",
+      "method": "POST",
+      "description": "Create an account manager.",
+      "link": "https://iotery.io/v1/account-managers#tag/Account-Managers"
+    },
+    {
+      "path": "/account-managers/:userUuid",
+      "name": "getAccountManager",
+      "method": "GET",
+      "description": "Get an account manager by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Account-Managers"
+    },
+    {
+      "path": "/account-managers/:userUuid",
+      "name": "updateAccountManager",
+      "method": "PATCH",
+      "description": "Update an account manager by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Account-Managers"
+    },
+    {
+      "path": "/account-managers/:userUuid",
+      "name": "deleteAccountManager",
+      "method": "DELETE",
+      "description": "Delete an account manager by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Account-Managers"
+    },
+    {
+      "path": "/consumers",
+      "name": "createConsumer",
+      "method": "POST",
+      "description": "Create a consumer.",
+      "link": "https://iotery.io/v1/account-managers#tag/Consumers"
+    },
+    {
+      "path": "/consumers",
+      "name": "getConsumerList",
+      "method": "GET",
+      "description": "Get a list of available consumers.",
+      "link": "https://iotery.io/v1/account-managers#tag/Consumers"
+    },
+    {
+      "path": "/consumers/:consumerUuid",
+      "name": "getConsumer",
+      "method": "GET",
+      "description": "Get a consumer by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Consumers"
+    },
+    {
+      "path": "/consumers/:consumerUuid",
+      "name": "updateConsumer",
+      "method": "PATCH",
+      "description": "Update a consumer by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Consumers"
+    },
+    {
+      "path": "/consumers/:consumerUuid",
+      "name": "deleteConsumer",
+      "method": "DELETE",
+      "description": "Delete a consumer by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Consumers"
+    },
+    {
+      "path": "/consumers/:consumerUuid/devices",
+      "name": "linkConsumerToDevice",
+      "method": "POST",
+      "description": "Link a consumer to a device.",
+      "link": "https://iotery.io/v1/account-managers#tag/Consumers"
+    },
+    {
+      "path": "/consumers/:consumerUuid/devices/:deviceUuid",
+      "name": "unlinkConsumerFromDevice",
+      "method": "DELETE",
+      "description": "Unlink a consumer from a device.",
+      "link": "https://iotery.io/v1/account-managers#tag/Consumers"
+    },
+    {
+      "path": "/consumers/:consumerUuid/networks",
+      "name": "linkConsumerToNetwork",
+      "method": "POST",
+      "description": "Link a consumer to a network.",
+      "link": "https://iotery.io/v1/account-managers#tag/Consumers"
+    },
+    {
+      "path": "/consumers/:consumerUuid/networks/:networkUuid",
+      "name": "unlinkConsumerFromNetwork",
+      "method": "DELETE",
+      "description": "Unlink a consumer from a network.",
+      "link": "https://iotery.io/v1/account-managers#tag/Consumers"
+    },
+    {
+      "path": "/device-types",
       "name": "createDeviceType",
       "method": "POST",
-      "path": "/device-types",
-      "description": "Creates a new device type",
-      "link": "https://iotery.io/v1/docs#createDeviceType"
+      "description": "Create a device type.",
+      "link": "https://iotery.io/v1/account-managers#tag/Device-Types"
     },
     {
-      "name": "getDeviceTypes",
-      "method": "GET",
       "path": "/device-types",
-      "description": "Gets all device types",
-      "query": { "limit": "Number of device types to get" },
-      "link": "https://iotery.io/v1/docs#getDeviceTypes"
+      "name": "getDeviceTypeList",
+      "method": "GET",
+      "description": "Get a list of available device types.",
+      "link": "https://iotery.io/v1/account-managers#tag/Device-Types"
     },
     {
-      "name": "getDeviceTypeByUuid",
-      "method": "GET",
       "path": "/device-types/:deviceTypeUuid",
-      "description": "Gets a device type by uuid",
-      "link": "https://iotery.io/v1/docs#getDeviceyTypeByUuid"
-    },
-    {
       "name": "updateDeviceType",
       "method": "PATCH",
-      "path": "/device-types/:deviceTypeUuid",
-      "description": "Updates a device type by uuid",
-      "link": "https://iotery.io/v1/docs#updateDeviceType"
+      "description": "Update a device type by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Device-Types"
     },
     {
+      "path": "/device-types/:deviceTypeUuid",
       "name": "deleteDeviceType",
       "method": "DELETE",
-      "path": "/device-types/:deviceTypeUuid",
-      "description": "Deletes a device type by uuid",
-      "link": "https://iotery.io/v1/docs#deleteDeviceType"
+      "description": "Delete a device type by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Device-Types"
     },
-
     {
+      "path": "/setting-types",
+      "name": "createSettingType",
+      "method": "POST",
+      "description": "Create a setting type.",
+      "link": "https://iotery.io/v1/account-managers#tag/Device-Setting Types"
+    },
+    {
+      "path": "/setting-types",
+      "name": "getSettingTypeList",
+      "method": "GET",
+      "description": "Get a list of available setting types.",
+      "link": "https://iotery.io/v1/account-managers#tag/Device-Setting Types"
+    },
+    {
+      "path": "/setting-types/:settingTypeUuid",
+      "name": "updateSettingType",
+      "method": "PATCH",
+      "description": "Update a setting type by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Device-Setting Types"
+    },
+    {
+      "path": "/setting-types/:settingTypeUuid",
+      "name": "deleteSettingType",
+      "method": "DELETE",
+      "description": "Delete a setting type by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Device-Setting Types"
+    },
+    {
+      "path": "/data-types",
+      "name": "createDataType",
+      "method": "POST",
+      "description": "Create a data type.",
+      "link": "https://iotery.io/v1/account-managers#tag/Data-Types"
+    },
+    {
+      "path": "/data-types",
+      "name": "getDataTypeList",
+      "method": "GET",
+      "description": "Get a list of available data types.",
+      "link": "https://iotery.io/v1/account-managers#tag/Data-Types"
+    },
+    {
+      "path": "/data-types/:dataTypeUuid",
+      "name": "updateDataType",
+      "method": "PATCH",
+      "description": "Update a data type by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Data-Types"
+    },
+    {
+      "path": "/data-types/:dataTypeUuid",
+      "name": "deleteDataType",
+      "method": "DELETE",
+      "description": "Delete a data type by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Data-Types"
+    },
+    {
+      "path": "/devices",
       "name": "createDevice",
       "method": "POST",
-      "path": "/device-types/:deviceTypeUuid/devices",
-      "description": "Creates a new device with a given device type",
-      "link": "https://iotery.io/v1/docs#createDevice"
+      "description": "Create a device.",
+      "link": "https://iotery.io/v1/account-managers#tag/Devices"
+    },
+    {
+      "path": "/devices",
+      "name": "getDeviceList",
+      "method": "GET",
+      "description": "Get a list of devices.",
+      "link": "https://iotery.io/v1/account-managers#tag/Devices"
+    },
+    {
+      "path": "/devices/command-instances",
+      "name": "createBatchedCommandInstances",
+      "method": "POST",
+      "description": "Create a set of batched command instances.",
+      "link": "https://iotery.io/v1/account-managers#tag/Devices"
+    },
+    {
+      "path": "/devices/:deviceUuid",
+      "name": "getDevice",
+      "method": "GET",
+      "description": "Get a device by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Devices"
+    },
+    {
+      "path": "/devices/:deviceUuid",
+      "name": "updateDevice",
+      "method": "PATCH",
+      "description": "Update a device by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Devices"
+    },
+    {
+      "path": "/devices/:deviceUuid",
+      "name": "deleteDevice",
+      "method": "DELETE",
+      "description": "Delete a device by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Devices"
+    },
+    {
+      "path": "/devices/:deviceUuid/command-instances",
+      "name": "createDeviceCommandInstance",
+      "method": "POST",
+      "description": "Create a command instance for a device.",
+      "link": "https://iotery.io/v1/account-managers#tag/Devices"
+    },
+    {
+      "path": "/devices/:deviceUuid/notification-instances",
+      "name": "createDeviceNotificationInstance",
+      "method": "POST",
+      "description": "Create a notification instance for a device.",
+      "link": "https://iotery.io/v1/account-managers#tag/Devices"
+    },
+    {
+      "path": "/firmware",
+      "name": "createFirmwareRecord",
+      "method": "POST",
+      "description": "Create a firmware record.",
+      "link": "https://iotery.io/v1/account-managers#tag/Firmware"
+    },
+    {
+      "path": "/firmware",
+      "name": "getFirmwareRecordList",
+      "method": "GET",
+      "description": "Get a list of firmware records.",
+      "link": "https://iotery.io/v1/account-managers#tag/Firmware"
+    },
+    {
+      "path": "/firmware/:firmwareUuid",
+      "name": "updateFirmwareRecord",
+      "method": "PATCH",
+      "description": "Update a firmware record by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Firmware"
+    },
+    {
+      "path": "/firmware/:firmwareUuid",
+      "name": "deleteFirmwareRecord",
+      "method": "DELETE",
+      "description": "Delete a firmware record by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Firmware"
+    },
+    {
+      "path": "/severity-types",
+      "name": "createSeverityType",
+      "method": "POST",
+      "description": "Create a severity type.",
+      "link": "https://iotery.io/v1/account-managers#tag/Notification-Severity Types"
+    },
+    {
+      "path": "/severity-types",
+      "name": "getSeverityTypeList",
+      "method": "GET",
+      "description": "Get a list of available severity types.",
+      "link": "https://iotery.io/v1/account-managers#tag/Notification-Severity Types"
+    },
+    {
+      "path": "/severity-types/:severityTypeUuid",
+      "name": "updateSeverityType",
+      "method": "PATCH",
+      "description": "Update a severity type by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Notification-Severity Types"
+    },
+    {
+      "path": "/severity-types/:severityTypeUuid",
+      "name": "deleteSeverityType",
+      "method": "DELETE",
+      "description": "Delete a severity type by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Notification-Severity Types"
+    },
+    {
+      "path": "/notifications",
+      "name": "createNotification",
+      "method": "POST",
+      "description": "Create a notification.",
+      "link": "https://iotery.io/v1/account-managers#tag/Notifications"
+    },
+    {
+      "path": "/notifications",
+      "name": "getNotificationList",
+      "method": "GET",
+      "description": "Get a list of available notifications.",
+      "link": "https://iotery.io/v1/account-managers#tag/Notifications"
+    },
+    {
+      "path": "/nofifications/:notificationUuid",
+      "name": "updateNotification",
+      "method": "PATCH",
+      "description": "Update a notification by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Notifications"
+    },
+    {
+      "path": "/nofifications/:notificationUuid",
+      "name": "deleteNotification",
+      "method": "DELETE",
+      "description": "Delete a notification by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Notifications"
+    },
+    {
+      "path": "/priority-types",
+      "name": "createPriorityType",
+      "method": "POST",
+      "description": "Create a priority type.",
+      "link": "https://iotery.io/v1/account-managers#tag/Command-Priority Types"
+    },
+    {
+      "path": "/priority-types",
+      "name": "getPriorityTypeList",
+      "method": "GET",
+      "description": "Get a list of available priority types.",
+      "link": "https://iotery.io/v1/account-managers#tag/Command-Priority Types"
+    },
+    {
+      "path": "/priority-types/:priorityTypeUuid",
+      "name": "updatePriorityType",
+      "method": "PATCH",
+      "description": "Update a priority type by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Command-Priority Types"
+    },
+    {
+      "path": "/priority-types/:priorityTypeUuid",
+      "name": "deletePriorityType",
+      "method": "DELETE",
+      "description": "Delete a priority type by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Command-Priority Types"
+    },
+    {
+      "path": "/command-types",
+      "name": "createCommandType",
+      "method": "POST",
+      "description": "Create a command type.",
+      "link": "https://iotery.io/v1/account-managers#tag/Command-Types"
+    },
+    {
+      "path": "/command-types",
+      "name": "getCommandTypeList",
+      "method": "GET",
+      "description": "Get a list of available command types.",
+      "link": "https://iotery.io/v1/account-managers#tag/Command-Types"
+    },
+    {
+      "path": "/command-types/:commandTypeUuid",
+      "name": "updateCommandType",
+      "method": "PATCH",
+      "description": "Update a command type by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Command-Types"
+    },
+    {
+      "path": "/command-types/:commandTypeUuid",
+      "name": "deleteCommandType",
+      "method": "DELETE",
+      "description": "Delete a command type by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Command-Types"
+    },
+    {
+      "path": "/command-fields",
+      "name": "createCommandField",
+      "method": "POST",
+      "description": "Create a command field.",
+      "link": "https://iotery.io/v1/account-managers#tag/Command-Fields"
+    },
+    {
+      "path": "/command-fields",
+      "name": "getCommandFieldList",
+      "method": "GET",
+      "description": "Get a list of available command fields.",
+      "link": "https://iotery.io/v1/account-managers#tag/Command-Fields"
+    },
+    {
+      "path": "/command-fields/:commandFieldUuid",
+      "name": "updateCommandField",
+      "method": "PATCH",
+      "description": "Update a command field by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Command-Fields"
+    },
+    {
+      "path": "/command-fields/:commandFieldUuid",
+      "name": "deleteCommandField",
+      "method": "DELETE",
+      "description": "Delete a command field by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Command-Fields"
+    },
+    {
+      "path": "/teams",
+      "name": "createTeam",
+      "method": "POST",
+      "description": "Create a team.",
+      "link": "https://iotery.io/v1/account-managers#tag/Teams"
+    },
+    {
+      "path": "/teams",
+      "name": "getTeamList",
+      "method": "GET",
+      "description": "Get a list of available teams.",
+      "link": "https://iotery.io/v1/account-managers#tag/Teams"
+    },
+    {
+      "path": "/teams/:teamUuid",
+      "name": "getTeam",
+      "method": "GET",
+      "description": "Get a team by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Teams"
+    },
+    {
+      "path": "/teams/:teamUuid",
+      "name": "updateTeam",
+      "method": "PATCH",
+      "description": "Update a team by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Teams"
+    },
+    {
+      "path": "/teams/:teamUuid",
+      "name": "deleteTeam",
+      "method": "DELETE",
+      "description": "Delete a team by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Teams"
+    },
+    {
+      "path": "/teams/users/:userUuid",
+      "name": "linkAccountManagerToTeam",
+      "method": "POST",
+      "description": "Link account manager to a team.",
+      "link": "https://iotery.io/v1/account-managers#tag/Teams"
+    },
+    {
+      "path": "/teams/users/:userUuid",
+      "name": "unlinkAccountManagerFromTeam",
+      "method": "DELETE",
+      "description": "Unlink account manager from a team.",
+      "link": "https://iotery.io/v1/account-managers#tag/Teams"
+    },
+    {
+      "path": "/networks",
+      "name": "createNetwork",
+      "method": "POST",
+      "description": "Create a network.",
+      "link": "https://iotery.io/v1/account-managers#tag/Networks"
+    },
+    {
+      "path": "/networks",
+      "name": "getNetworkList",
+      "method": "GET",
+      "description": "Get a list of networks.",
+      "link": "https://iotery.io/v1/account-managers#tag/Networks"
+    },
+    {
+      "path": "/networks/:networkUuid",
+      "name": "getNetwork",
+      "method": "GET",
+      "description": "Get a network by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Networks"
+    },
+    {
+      "path": "/networks/:networkUuid",
+      "name": "updateNetwork",
+      "method": "PATCH",
+      "description": "Update a network by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Networks"
+    },
+    {
+      "path": "/networks/:networkUuid",
+      "name": "deleteNetwork",
+      "method": "DELETE",
+      "description": "Delete a network by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Networks"
+    },
+    {
+      "path": "/provision-network",
+      "name": "provisionNetwork",
+      "method": "POST",
+      "description": "Provision a network.",
+      "link": "https://iotery.io/v1/account-managers#tag/Networks"
+    },
+    {
+      "path": "/webhook-action-types",
+      "name": "getWebhookActionTypeList",
+      "method": "GET",
+      "description": "# Get a list of webhook action types.",
+      "link": "https://iotery.io/v1/account-managers#tag/Webhooks"
+    },
+    {
+      "path": "/webhook-action-types/:webhookActionTypeUuid",
+      "name": "getWebhookActionType",
+      "method": "GET",
+      "description": "Get a webhook action type by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Webhooks"
+    },
+    {
+      "path": "/webhook-actions",
+      "name": "createWebhookAction",
+      "method": "POST",
+      "description": "Create a webhook action.",
+      "link": "https://iotery.io/v1/account-managers#tag/Webhooks"
+    },
+    {
+      "path": "/webhook-actions",
+      "name": "getWebhookActionList",
+      "method": "GET",
+      "description": "Get a list of webhook actions.",
+      "link": "https://iotery.io/v1/account-managers#tag/Webhooks"
+    },
+    {
+      "path": "/webhook-actions/:webhookActionUuid",
+      "name": "getWebhookAction",
+      "method": "GET",
+      "description": "Get a webhook action by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Webhooks"
+    },
+    {
+      "path": "/webhook-actions/:webhookActionUuid",
+      "name": "updateWebhookAction",
+      "method": "PATCH",
+      "description": "Update a webhook action by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Webhooks"
+    },
+    {
+      "path": "/webhook-actions/:webhookActionUuid",
+      "name": "deleteWebhookAction",
+      "method": "DELETE",
+      "description": "Delete a webhook action type by uuid.",
+      "link": "https://iotery.io/v1/account-managers#tag/Webhooks"
     }
   ]
 }
