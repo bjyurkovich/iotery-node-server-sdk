@@ -41,7 +41,7 @@ api.routes.forEach(e => {
           {
             method: e.method,
             headers: {
-              "X-API-Key": Iotery.prototype._apiKey,
+              "X-API-Key": this._apiKey,
               "Content-Type": "application/json"
             }
           }
@@ -103,7 +103,7 @@ api.routes.forEach(e => {
           {
             method: e.method,
             headers: {
-              "X-API-Key": Iotery.prototype._apiKey,
+              "X-API-Key": this._apiKey,
               "Content-Type": "application/json"
             }
           }
