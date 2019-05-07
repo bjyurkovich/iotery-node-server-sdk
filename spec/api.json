@@ -115,6 +115,13 @@
     },
     {
       "path": "/device-types/:deviceTypeUuid",
+      "name": "getDeviceType",
+      "method": "GET",
+      "description": "Get a device type by uuid.",
+      "link": "https://iotery.io/v1/docs#getDeviceType"
+    },
+    {
+      "path": "/device-types/:deviceTypeUuid",
       "name": "updateDeviceType",
       "method": "PATCH",
       "description": "Update a device type by uuid.",
@@ -143,6 +150,13 @@
     },
     {
       "path": "/setting-types/:settingTypeUuid",
+      "name": "getSettingType",
+      "method": "GET",
+      "description": "Get a setting type by uuid.",
+      "link": "https://iotery.io/v1/docs#getSettingType"
+    },
+    {
+      "path": "/setting-types/:settingTypeUuid",
       "name": "updateSettingType",
       "method": "PATCH",
       "description": "Update a setting type by uuid.",
@@ -168,6 +182,13 @@
       "method": "GET",
       "description": "Get a list of available data types.",
       "link": "https://iotery.io/v1/docs#getDataTypeList"
+    },
+    {
+      "path": "/data-types/:dataTypeUuid",
+      "name": "getDataType",
+      "method": "GET",
+      "description": "Get a data type by uuid.",
+      "link": "https://iotery.io/v1/docs#getDataType"
     },
     {
       "path": "/data-types/:dataTypeUuid",
@@ -240,153 +261,6 @@
       "link": "https://iotery.io/v1/docs#createDeviceNotificationInstance"
     },
     {
-      "path": "/embedded/basic/get-token",
-      "name": "getDeviceTokenBasic",
-      "method": "POST",
-      "description": "Get token for device via key, serial, and secret.",
-      "link": "https://iotery.io/v1/docs#getDeviceTokenBasic"
-    },
-    {
-      "path": "/embedded/batch-command-instances/:batchReferenceUuid/executed",
-      "name": "setBatchedCommandInstancesAsExecuted",
-      "method": "PATCH",
-      "description": "Set a collection of batched command instances as executed.",
-      "link": "https://iotery.io/v1/docs#setBatchedCommandInstancesAsExecuted"
-    },
-    {
-      "path": "/embedded/broker-address",
-      "name": "getBrokerAddress",
-      "method": "GET",
-      "description": "Get the MQTT broker address.",
-      "link": "https://iotery.io/v1/docs#getBrokerAddress"
-    },
-    {
-      "path": "/embedded/command-instances/:commandInstanceUuid/executed",
-      "name": "setCommandInstanceAsExecuted",
-      "method": "PATCH",
-      "description": "Report that a command has been executed to the server.",
-      "link": "https://iotery.io/v1/docs#setCommandInstanceAsExecuted"
-    },
-    {
-      "path": "/embedded/command-types",
-      "name": "getCommandTypeListEmbedded",
-      "method": "GET",
-      "description": "Get a list of available command types.",
-      "link": "https://iotery.io/v1/docs#getCommandTypeListEmbedded"
-    },
-    {
-      "path": "/embedded/current-timestamp",
-      "name": "getCurrentTimestamp",
-      "method": "GET",
-      "description": "Get the current server time in epoch (unix) time.",
-      "link": "https://iotery.io/v1/docs#getCurrentTimestamp"
-    },
-    {
-      "path": "/embedded/data-types",
-      "name": "getDataTypeListEmbedded",
-      "method": "GET",
-      "description": "Get a list of available data types.",
-      "link": "https://iotery.io/v1/docs#getDataTypeListEmbedded"
-    },
-    {
-      "path": "/embedded/devices/:deviceUuid/channelId/:channelId",
-      "name": "updateDeviceChannel",
-      "method": "PATCH",
-      "description": "Update device channel.",
-      "link": "https://iotery.io/v1/docs#updateDeviceChannel"
-    },
-    {
-      "path": "/embedded/devices/:deviceUuid/command-types/:commandTypeUuid",
-      "name": "createDeviceCommandInstanceEmbedded",
-      "method": "POST",
-      "description": "Create a command instance via a device.",
-      "link": "https://iotery.io/v1/docs#createDeviceCommandInstanceEmbedded"
-    },
-    {
-      "path": "/embedded/devices/:deviceUuid/data",
-      "name": "postData",
-      "method": "POST",
-      "description": "Post data to the cloud.",
-      "link": "https://iotery.io/v1/docs#postData"
-    },
-    {
-      "path": "/embedded/devices/:deviceUuid/settings",
-      "name": "upsertDeviceSettings",
-      "method": "POST",
-      "description": "Upsert settings for a device.",
-      "link": "https://iotery.io/v1/docs#upsertDeviceSettings"
-    },
-    {
-      "path": "/embedded/devices/:deviceUuid/settings",
-      "name": "getDeviceSettingList",
-      "method": "GET",
-      "description": "Get a list of settings for a device.",
-      "link": "https://iotery.io/v1/docs#getDeviceSettingList"
-    },
-    {
-      "path": "/embedded/devices/:deviceUuid/unexecuted-commands",
-      "name": "getDeviceUnexecutedCommandInstanceList",
-      "method": "GET",
-      "description": "Get a list of unexecuted command instances for a device.",
-      "link": "https://iotery.io/v1/docs#getDeviceUnexecutedCommandInstanceList"
-    },
-    {
-      "path": "/embedded/devices/:deviceUuid/upload-log-file",
-      "name": "uploadDeviceLogs",
-      "method": "POST",
-      "description": "Upload zip file of device logs.",
-      "link": "https://iotery.io/v1/docs#uploadDeviceLogs"
-    },
-    {
-      "path": "/embedded/firmware/:deviceTypeUuid/:version",
-      "name": "getDeviceTypeFirmwareRecord",
-      "method": "GET",
-      "description": "Get a desired version of a firmware record for a given device type.",
-      "link": "https://iotery.io/v1/docs#getDeviceTypeFirmwareRecord"
-    },
-    {
-      "path": "/embedded/key",
-      "name": "getPublicCloudKey",
-      "method": "GET",
-      "description": "Get base64 encoded public key from the server for use in RSA scheme.",
-      "link": "https://iotery.io/v1/docs#getPublicCloudKey"
-    },
-    {
-      "path": "/embedded/me",
-      "name": "getMe",
-      "method": "GET",
-      "description": "Get information about the device.",
-      "link": "https://iotery.io/v1/docs#getMe"
-    },
-    {
-      "path": "/embedded/notifications",
-      "name": "getNotificationListEmbedded",
-      "method": "GET",
-      "description": "Get a list of available notifications.",
-      "link": "https://iotery.io/v1/docs#getNotificationListEmbedded"
-    },
-    {
-      "path": "/embedded/notification-instances/:notificationInstanceUuid/inactive",
-      "name": "setNotificationInstanceInactive",
-      "method": "PATCH",
-      "description": "Set notification instance inactive.",
-      "link": "https://iotery.io/v1/docs#setNotificationInstanceInactive"
-    },
-    {
-      "path": "/embedded/setting-types",
-      "name": "getSettingTypeListEmbedded",
-      "method": "GET",
-      "description": "Get a list of available setting types.",
-      "link": "https://iotery.io/v1/docs#getSettingTypeListEmbedded"
-    },
-    {
-      "path": "/embedded/token/asymmetric",
-      "name": "getDeviceTokenAsymmetric",
-      "method": "POST",
-      "description": "Get device token based on encrypted credentials.",
-      "link": "https://iotery.io/v1/docs#getDeviceTokenAsymmetric"
-    },
-    {
       "path": "/firmware",
       "name": "createFirmwareRecord",
       "method": "POST",
@@ -399,6 +273,13 @@
       "method": "GET",
       "description": "Get a list of firmware records.",
       "link": "https://iotery.io/v1/docs#getFirmwareRecordList"
+    },
+    {
+      "path": "/firmware/:firmwareUuid",
+      "name": "getFirmwareRecord",
+      "method": "GET",
+      "description": "Get a firmware record by uuid.",
+      "link": "https://iotery.io/v1/docs#getFirmwareRecord"
     },
     {
       "path": "/firmware/:firmwareUuid",
@@ -430,6 +311,13 @@
     },
     {
       "path": "/severity-types/:severityTypeUuid",
+      "name": "getSeverityType",
+      "method": "GET",
+      "description": "Delete a severity type by uuid.",
+      "link": "https://iotery.io/v1/docs#getSeverityType"
+    },
+    {
+      "path": "/severity-types/:severityTypeUuid",
       "name": "updateSeverityType",
       "method": "PATCH",
       "description": "Update a severity type by uuid.",
@@ -455,6 +343,13 @@
       "method": "GET",
       "description": "Get a list of available notifications.",
       "link": "https://iotery.io/v1/docs#getNotificationList"
+    },
+    {
+      "path": "/notifications/:notificationUuid",
+      "name": "getNotification",
+      "method": "GET",
+      "description": "Get a notification by uuid.",
+      "link": "https://iotery.io/v1/docs#getNotification"
     },
     {
       "path": "/notifications/:notificationUuid",
@@ -486,6 +381,13 @@
     },
     {
       "path": "/priority-types/:priorityTypeUuid",
+      "name": "getPriorityType",
+      "method": "GET",
+      "description": "Get a priority type by uuid.",
+      "link": "https://iotery.io/v1/docs#getPriorityType"
+    },
+    {
+      "path": "/priority-types/:priorityTypeUuid",
       "name": "updatePriorityType",
       "method": "PATCH",
       "description": "Update a priority type by uuid.",
@@ -511,6 +413,13 @@
       "method": "GET",
       "description": "Get a list of available command types.",
       "link": "https://iotery.io/v1/docs#getCommandTypeList"
+    },
+    {
+      "path": "/command-types/:commandTypeUuid",
+      "name": "getCommandType",
+      "method": "GET",
+      "description": "Get a command type by uuid.",
+      "link": "https://iotery.io/v1/docs#getCommandType"
     },
     {
       "path": "/command-types/:commandTypeUuid",
@@ -542,6 +451,13 @@
     },
     {
       "path": "/command-fields/:commandFieldUuid",
+      "name": "getCommandField",
+      "method": "GET",
+      "description": "Get a command field by uuid.",
+      "link": "https://iotery.io/v1/docs#getCommandField"
+    },
+    {
+      "path": "/command-fields/:commandFieldUuid",
       "name": "updateCommandField",
       "method": "PATCH",
       "description": "Update a command field by uuid.",
@@ -570,6 +486,13 @@
     },
     {
       "path": "/event-types/:eventTypeUuid",
+      "name": "getEventType",
+      "method": "GET",
+      "description": "Get an event type by uuid.",
+      "link": "https://iotery.io/v1/docs#getEventType"
+    },
+    {
+      "path": "/event-types/:eventTypeUuid",
       "name": "updateEventType",
       "method": "PATCH",
       "description": "Update an event type by uuid.",
@@ -581,6 +504,41 @@
       "method": "DELETE",
       "description": "Delete an event type by uuid.",
       "link": "https://iotery.io/v1/docs#deleteEventType"
+    },
+    {
+      "path": "/grouping-types",
+      "name": "createGroupingType",
+      "method": "POST",
+      "description": "Create a grouping type.",
+      "link": "https://iotery.io/v1/docs#createGroupingType"
+    },
+    {
+      "path": "/grouping-types",
+      "name": "getGroupingTypeList",
+      "method": "GET",
+      "description": "Get a list of available grouping types.",
+      "link": "https://iotery.io/v1/docs#getGroupingTypeList"
+    },
+    {
+      "path": "/grouping-types/:groupingTypeUuid",
+      "name": "getGroupingType",
+      "method": "GET",
+      "description": "Get a grouping type by uuid.",
+      "link": "https://iotery.io/v1/docs#getGroupingType"
+    },
+    {
+      "path": "/grouping-types/:groupingTypeUuid",
+      "name": "updateGroupingType",
+      "method": "PATCH",
+      "description": "Update a grouping type by uuid.",
+      "link": "https://iotery.io/v1/docs#updateGroupingType"
+    },
+    {
+      "path": "/grouping-types/:groupingTypeUuid",
+      "name": "deleteGroupingType",
+      "method": "DELETE",
+      "description": "Delete a grouping type by uuid.",
+      "link": "https://iotery.io/v1/docs#deleteGroupingType"
     },
     {
       "path": "/teams",
@@ -667,11 +625,270 @@
       "link": "https://iotery.io/v1/docs#deleteNetwork"
     },
     {
+      "path": "/networks/:networkUuid/command-instances",
+      "name": "createNetworkBatchedCommands",
+      "method": "POST",
+      "description": "Create a set of batched commands for a network's devices.",
+      "link": "https://iotery.io/v1/docs#createNetworkBatchedCommands"
+    },
+    {
+      "path": "/networks/:networkUuid/devices",
+      "name": "getNetworkDevices",
+      "method": "GET",
+      "description": "Get a network's devices.",
+      "link": "https://iotery.io/v1/docs#getNetworkDevices"
+    },
+    {
+      "path": "/networks/:networkUuid/groupings",
+      "name": "getNetworkGroupings",
+      "method": "GET",
+      "description": "Get a network's groupings.",
+      "link": "https://iotery.io/v1/docs#getNetworkGroupings"
+    },
+    {
+      "path": "/networks/:networkUuid/groupings",
+      "name": "createGrouping",
+      "method": "POST",
+      "description": "Create a network grouping.",
+      "link": "https://iotery.io/v1/docs#createGrouping"
+    },
+    {
+      "path": "/networks/:networkUuid/groupings/:groupingUuid",
+      "name": "getGrouping",
+      "method": "GET",
+      "description": "Get a network's grouping by uuid.",
+      "link": "https://iotery.io/v1/docs#getGrouping"
+    },
+    {
+      "path": "/networks/:networkUuid/groupings/:groupingUuid",
+      "name": "updateGrouping",
+      "method": "PATCH",
+      "description": "Update a network grouping.",
+      "link": "https://iotery.io/v1/docs#updateGrouping"
+    },
+    {
+      "path": "/networks/:networkUuid/groupings/:groupingUuid",
+      "name": "deleteGrouping",
+      "method": "DELETE",
+      "description": "Delete a network's grouping by uuid.",
+      "link": "https://iotery.io/v1/docs#deleteGrouping"
+    },
+    {
+      "path": "/networks/:networkUuid/groupings/:groupingUuid/child-groupings",
+      "name": "getChildGroupingList",
+      "method": "GET",
+      "description": "Get a list of child groupings for a grouping.",
+      "link": "https://iotery.io/v1/docs#getChildGroupingList"
+    },
+    {
+      "path": "/networks/:networkUuid/groupings/:groupingUuid/child-groupings",
+      "name": "addChildGrouping",
+      "method": "POST",
+      "description": "Add a child grouping.",
+      "link": "https://iotery.io/v1/docs#addChildGrouping"
+    },
+    {
+      "path": "/networks/:networkUuid/groupings/:groupingUuid/command-instances",
+      "name": "createGroupingBatchedCommands",
+      "method": "POST",
+      "description": "Create a set of batched commands for a grouping and all child grouping devices.",
+      "link": "https://iotery.io/v1/docs#createGroupingBatchedCommands"
+    },
+    {
+      "path": "/networks/:networkUuid/groupings/:groupingUuid/devices",
+      "name": "getDeviceListForGrouping",
+      "method": "GET",
+      "description": "Get a list of devices for a grouping.",
+      "link": "https://iotery.io/v1/docs#getDeviceListForGrouping"
+    },
+    {
+      "path": "/networks/:networkUuid/groupings/:groupingUuid/devices",
+      "name": "moveDeviceToGrouping",
+      "method": "POST",
+      "description": "Move a device to a grouping.",
+      "link": "https://iotery.io/v1/docs#moveDeviceToGrouping"
+    },
+    {
+      "path": "/networks/:networkUuid/groupings/:groupingUuid/devices/:deviceUuid",
+      "name": "removeDeviceFromGrouping",
+      "method": "DELETE",
+      "description": "remove a device from a grouping",
+      "link": "https://iotery.io/v1/docs#removeDeviceFromGrouping"
+    },
+    {
+      "path": "/networks/:networkUuid/network-locations",
+      "name": "getNetworkLocations",
+      "method": "GET",
+      "description": "Get a network's locations.",
+      "link": "https://iotery.io/v1/docs#getNetworkLocations"
+    },
+    {
+      "path": "/networks/:networkUuid/network-locations",
+      "name": "createNetworkLocation",
+      "method": "POST",
+      "description": "Create a network location.",
+      "link": "https://iotery.io/v1/docs#createNetworkLocation"
+    },
+    {
+      "path": "/networks/:networkUuid/network-locations/:networkLocationUuid",
+      "name": "getNetworkLocation",
+      "method": "GET",
+      "description": "Get a network location by uuid.",
+      "link": "https://iotery.io/v1/docs#getNetworkLocation"
+    },
+    {
+      "path": "/networks/:networkUuid/network-locations/:networkLocationUuid",
+      "name": "updateNetworkLocation",
+      "method": "PATCH",
+      "description": "Update a network location.",
+      "link": "https://iotery.io/v1/docs#updateNetworkLocation"
+    },
+    {
+      "path": "/networks/:networkUuid/network-locations/:networkLocationUuid",
+      "name": "deleteNetworkLocation",
+      "method": "DELETE",
+      "description": "Delete a network location by uuid.",
+      "link": "https://iotery.io/v1/docs#deleteNetworkLocation"
+    },
+    {
+      "path": "/networks/:networkUuid/schedules",
+      "name": "getScheduleList",
+      "method": "GET",
+      "description": "Get a list of a network's schedules.",
+      "link": "https://iotery.io/v1/docs#getScheduleList"
+    },
+    {
+      "path": "/networks/:networkUuid/schedules",
+      "name": "createSchedule",
+      "method": "POST",
+      "description": "Create a schedule.",
+      "link": "https://iotery.io/v1/docs#createSchedule"
+    },
+    {
+      "path": "/networks/:networkUuid/schedules/:scheduleUuid",
+      "name": "getSchedule",
+      "method": "GET",
+      "description": "Get a schedule by uuid.",
+      "link": "https://iotery.io/v1/docs#getSchedule"
+    },
+    {
+      "path": "/networks/:networkUuid/schedules/:scheduleUuid",
+      "name": "updateSchedule",
+      "method": "PATCH",
+      "description": "Update a schedule.",
+      "link": "https://iotery.io/v1/docs#updateSchedule"
+    },
+    {
+      "path": "/networks/:networkUuid/schedules/:scheduleUuid",
+      "name": "deleteSchedule",
+      "method": "DELETE",
+      "description": "Delete a schedule by uuid.",
+      "link": "https://iotery.io/v1/docs#deleteSchedule"
+    },
+    {
+      "path": "/networks/:networkUuid/schedules/:scheduleUuid/execute",
+      "name": "executeSchedule",
+      "method": "POST",
+      "description": "Execute a schedule.",
+      "link": "https://iotery.io/v1/docs#executeSchedule"
+    },
+    {
+      "path": "/deprovision-network/networks/:networkUuid",
+      "name": "deprovisionNetwork",
+      "method": "POST",
+      "description": "Deprovision a network.",
+      "link": "https://iotery.io/v1/docs#deprovisionNetwork"
+    },
+    {
       "path": "/provision-network",
       "name": "provisionNetwork",
       "method": "POST",
       "description": "Provision a network.",
       "link": "https://iotery.io/v1/docs#provisionNetwork"
+    },
+    {
+      "path": "/provision-device/networks/:networkUuid/devices/:deviceUuid",
+      "name": "provisionDevice",
+      "method": "POST",
+      "description": "Provision a device.",
+      "link": "https://iotery.io/v1/docs#provisionDevice"
+    },
+    {
+      "path": "/deprovision-device/networks/:networkUuid/devices/:deviceUuid",
+      "name": "deprovisionDevice",
+      "method": "POST",
+      "description": "Deprovision a device.",
+      "link": "https://iotery.io/v1/docs#deprovisionDevice"
+    },
+    {
+      "path": "/grouping-devices",
+      "name": "createGroupingDevice",
+      "method": "POST",
+      "description": "Create a GroupingDevice link.",
+      "link": "https://iotery.io/v1/docs#createGroupingDevice"
+    },
+    {
+      "path": "/grouping-devices",
+      "name": "getGroupingDeviceList",
+      "method": "GET",
+      "description": "Get a list of GroupingDevice links.",
+      "link": "https://iotery.io/v1/docs#getGroupingDeviceList"
+    },
+    {
+      "path": "/grouping-devices/:groupingDeviceUuid",
+      "name": "getGroupingDevice",
+      "method": "GET",
+      "description": "Get a GroupingDevice link by uuid.",
+      "link": "https://iotery.io/v1/docs#getGroupingDevice"
+    },
+    {
+      "path": "/grouping-devices/:groupingDeviceUuid",
+      "name": "updateGroupingDevice",
+      "method": "PATCH",
+      "description": "Update a GroupingDevice link by uuid.",
+      "link": "https://iotery.io/v1/docs#updateGroupingDevice"
+    },
+    {
+      "path": "/grouping-devices/:groupingDeviceUuid",
+      "name": "deleteGroupingDevice",
+      "method": "DELETE",
+      "description": "Delete a GroupingDevice link by uuid.",
+      "link": "https://iotery.io/v1/docs#deleteGroupingDevice"
+    },
+    {
+      "path": "/grouping-links",
+      "name": "createGroupingLink",
+      "method": "POST",
+      "description": "Create a GroupingLink.",
+      "link": "https://iotery.io/v1/docs#createGroupingLink"
+    },
+    {
+      "path": "/grouping-links",
+      "name": "getGroupingLinkList",
+      "method": "GET",
+      "description": "Get a list of GroupingLinks.",
+      "link": "https://iotery.io/v1/docs#getGroupingLinkList"
+    },
+    {
+      "path": "/grouping-links/:groupingLinkUuid",
+      "name": "getGroupingLink",
+      "method": "GET",
+      "description": "Get a GroupingLink by uuid.",
+      "link": "https://iotery.io/v1/docs#getGroupingLink"
+    },
+    {
+      "path": "/grouping-links/:groupingLinkUuid",
+      "name": "updateGroupingLink",
+      "method": "PATCH",
+      "description": "Update a GroupingLink by uuid.",
+      "link": "https://iotery.io/v1/docs#updateGroupingLink"
+    },
+    {
+      "path": "/grouping-links/:groupingLinkUuid",
+      "name": "deleteGroupingLink",
+      "method": "DELETE",
+      "description": "Delete a GroupingLink by uuid.",
+      "link": "https://iotery.io/v1/docs#deleteGroupingLink"
     },
     {
       "path": "/webhook-actions",
