@@ -506,6 +506,41 @@
       "link": "https://iotery.io/v1/docs#deleteEventType"
     },
     {
+      "path": "/events",
+      "name": "createEvent",
+      "method": "POST",
+      "description": "Create an event.",
+      "link": "https://iotery.io/v1/docs#createEvent"
+    },
+    {
+      "path": "/events",
+      "name": "getEventList",
+      "method": "GET",
+      "description": "Get a list of events.",
+      "link": "https://iotery.io/v1/docs#getEventList"
+    },
+    {
+      "path": "/events/:eventUuid",
+      "name": "getEvent",
+      "method": "GET",
+      "description": "Get an event by uuid.",
+      "link": "https://iotery.io/v1/docs#getEvent"
+    },
+    {
+      "path": "/events/:eventUuid",
+      "name": "updateEvent",
+      "method": "PATCH",
+      "description": "Update an event by uuid.",
+      "link": "https://iotery.io/v1/docs#updateEvent"
+    },
+    {
+      "path": "/events/:eventUuid",
+      "name": "deleteEvent",
+      "method": "DELETE",
+      "description": "Delete an event by uuid.",
+      "link": "https://iotery.io/v1/docs#deleteEvent"
+    },
+    {
       "path": "/grouping-types",
       "name": "createGroupingType",
       "method": "POST",
