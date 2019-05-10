@@ -632,6 +632,13 @@
       "link": "https://iotery.io/v1/docs#unlinkAccountManagerFromTeam"
     },
     {
+      "path": "/groupings/:groupingUuid",
+      "name": "getGrouping",
+      "method": "GET",
+      "description": "Get a grouping by uuid.",
+      "link": "https://iotery.io/v1/docs#getGrouping"
+    },
+    {
       "path": "/networks",
       "name": "createNetwork",
       "method": "POST",
@@ -696,10 +703,10 @@
     },
     {
       "path": "/networks/:networkUuid/groupings/:groupingUuid",
-      "name": "getGrouping",
+      "name": "getNetworkGrouping",
       "method": "GET",
       "description": "Get a network's grouping by uuid.",
-      "link": "https://iotery.io/v1/docs#getGrouping"
+      "link": "https://iotery.io/v1/docs#getNetworkGrouping"
     },
     {
       "path": "/networks/:networkUuid/groupings/:groupingUuid",
