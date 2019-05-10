@@ -773,7 +773,7 @@
     },
     {
       "path": "/networks/:networkUuid/network-locations",
-      "name": "getNetworkLocations",
+      "name": "getNetworkLocationList",
       "method": "GET",
       "description": "Get a network's locations.",
       "link": "https://iotery.io/v1/docs#getNetworkLocations"
