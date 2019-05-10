@@ -226,6 +226,13 @@
       "link": "https://iotery.io/v1/docs#createBatchedCommandInstances"
     },
     {
+      "path": "/devices/unexecuted-command-instances",
+      "name": "getUnexecutedCommandInstanceList",
+      "method": "GET",
+      "description": "Get all unexecuted command instances.",
+      "link": "https://iotery.io/v1/docs#getUnexecutedCommandInstanceList"
+    },
+    {
       "path": "/devices/:deviceUuid",
       "name": "getDevice",
       "method": "GET",
@@ -668,10 +675,10 @@
     },
     {
       "path": "/networks/:networkUuid/devices",
-      "name": "getNetworkDevices",
+      "name": "getNetworkDeviceList",
       "method": "GET",
       "description": "Get a network's devices.",
-      "link": "https://iotery.io/v1/docs#getNetworkDevices"
+      "link": "https://iotery.io/v1/docs#getNetworkDeviceList"
     },
     {
       "path": "/networks/:networkUuid/groupings",
