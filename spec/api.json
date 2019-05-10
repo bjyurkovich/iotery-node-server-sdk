@@ -696,7 +696,7 @@
     },
     {
       "path": "/networks/:networkUuid/groupings",
-      "name": "getNetworkGroupings",
+      "name": "getNetworkGroupingList",
       "method": "GET",
       "description": "Get a network's groupings.",
       "link": "https://iotery.io/v1/docs#getNetworkGroupings"
