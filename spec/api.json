@@ -639,6 +639,13 @@
       "link": "https://iotery.io/v1/docs#getGrouping"
     },
     {
+      "path": "/groupings/:groupingUuid/command-instances",
+      "name": "createGroupingBatchedCommands",
+      "method": "POST",
+      "description": "Create a set of batched commands for a grouping and all child grouping devices.",
+      "link": "https://iotery.io/v1/docs#createGroupingBatchedCommands"
+    },
+    {
       "path": "/network-locations/:networkLocationUuid",
       "name": "updateNetworkLocation",
       "method": "PATCH",
@@ -699,7 +706,7 @@
       "name": "getNetworkGroupingList",
       "method": "GET",
       "description": "Get a network's groupings.",
-      "link": "https://iotery.io/v1/docs#getNetworkGroupings"
+      "link": "https://iotery.io/v1/docs#getNetworkGroupingList"
     },
     {
       "path": "/networks/:networkUuid/groupings",
@@ -744,13 +751,6 @@
       "link": "https://iotery.io/v1/docs#addChildGrouping"
     },
     {
-      "path": "/networks/:networkUuid/groupings/:groupingUuid/command-instances",
-      "name": "createGroupingBatchedCommands",
-      "method": "POST",
-      "description": "Create a set of batched commands for a grouping and all child grouping devices.",
-      "link": "https://iotery.io/v1/docs#createGroupingBatchedCommands"
-    },
-    {
       "path": "/networks/:networkUuid/groupings/:groupingUuid/devices",
       "name": "getDeviceListForGrouping",
       "method": "GET",
@@ -776,7 +776,7 @@
       "name": "getNetworkLocationList",
       "method": "GET",
       "description": "Get a network's locations.",
-      "link": "https://iotery.io/v1/docs#getNetworkLocations"
+      "link": "https://iotery.io/v1/docs#getNetworkLocationList"
     },
     {
       "path": "/networks/:networkUuid/network-locations",
@@ -811,11 +811,11 @@
       "name": "getNetworkScheduleList",
       "method": "GET",
       "description": "Get a list of a network's schedules.",
-      "link": "https://iotery.io/v1/docs#getScheduleList"
+      "link": "https://iotery.io/v1/docs#getNetworkScheduleList"
     },
     {
       "path": "/networks/:networkUuid/schedules",
-      "name": "createNetworkSchedule",
+      "name": "createSchedule",
       "method": "POST",
       "description": "Create a schedule.",
       "link": "https://iotery.io/v1/docs#createSchedule"
@@ -825,28 +825,28 @@
       "name": "getNetworkSchedule",
       "method": "GET",
       "description": "Get a schedule by uuid.",
-      "link": "https://iotery.io/v1/docs#getSchedule"
+      "link": "https://iotery.io/v1/docs#getNetworkSchedule"
     },
     {
       "path": "/networks/:networkUuid/schedules/:scheduleUuid",
       "name": "updateNetworkSchedule",
       "method": "PATCH",
       "description": "Update a schedule.",
-      "link": "https://iotery.io/v1/docs#updateSchedule"
+      "link": "https://iotery.io/v1/docs#updateNetworkSchedule"
     },
     {
       "path": "/networks/:networkUuid/schedules/:scheduleUuid",
       "name": "deleteNetworkSchedule",
       "method": "DELETE",
       "description": "Delete a schedule by uuid.",
-      "link": "https://iotery.io/v1/docs#deleteSchedule"
+      "link": "https://iotery.io/v1/docs#deleteNetworkSchedule"
     },
     {
       "path": "/networks/:networkUuid/schedules/:scheduleUuid/execute",
       "name": "executeNetworkSchedule",
       "method": "POST",
       "description": "Execute a schedule.",
-      "link": "https://iotery.io/v1/docs#executeSchedule"
+      "link": "https://iotery.io/v1/docs#executeNetworkSchedule"
     },
     {
       "path": "/deprovision-network/networks/:networkUuid",
