@@ -808,42 +808,42 @@
     },
     {
       "path": "/networks/:networkUuid/schedules",
-      "name": "getScheduleList",
+      "name": "getNetworkScheduleList",
       "method": "GET",
       "description": "Get a list of a network's schedules.",
       "link": "https://iotery.io/v1/docs#getScheduleList"
     },
     {
       "path": "/networks/:networkUuid/schedules",
-      "name": "createSchedule",
+      "name": "createNetworkSchedule",
       "method": "POST",
       "description": "Create a schedule.",
       "link": "https://iotery.io/v1/docs#createSchedule"
     },
     {
       "path": "/networks/:networkUuid/schedules/:scheduleUuid",
-      "name": "getSchedule",
+      "name": "getNetworkSchedule",
       "method": "GET",
       "description": "Get a schedule by uuid.",
       "link": "https://iotery.io/v1/docs#getSchedule"
     },
     {
       "path": "/networks/:networkUuid/schedules/:scheduleUuid",
-      "name": "updateSchedule",
+      "name": "updateNetworkSchedule",
       "method": "PATCH",
       "description": "Update a schedule.",
       "link": "https://iotery.io/v1/docs#updateSchedule"
     },
     {
       "path": "/networks/:networkUuid/schedules/:scheduleUuid",
-      "name": "deleteSchedule",
+      "name": "deleteNetworkSchedule",
       "method": "DELETE",
       "description": "Delete a schedule by uuid.",
       "link": "https://iotery.io/v1/docs#deleteSchedule"
     },
     {
       "path": "/networks/:networkUuid/schedules/:scheduleUuid/execute",
-      "name": "executeSchedule",
+      "name": "executeNetworkSchedule",
       "method": "POST",
       "description": "Execute a schedule.",
       "link": "https://iotery.io/v1/docs#executeSchedule"
