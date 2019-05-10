@@ -639,6 +639,13 @@
       "link": "https://iotery.io/v1/docs#getGrouping"
     },
     {
+      "path": "/network-locations/:networkLocationUuid",
+      "name": "updateNetworkLocation",
+      "method": "PATCH",
+      "description": "Update a network location by uuid.",
+      "link": "https://iotery.io/v1/docs#updateNetworkLocation"
+    },
+    {
       "path": "/networks",
       "name": "createNetwork",
       "method": "POST",
@@ -787,10 +794,10 @@
     },
     {
       "path": "/networks/:networkUuid/network-locations/:networkLocationUuid",
-      "name": "updateNetworkLocation",
+      "name": "updateNetworkNetworkLocation",
       "method": "PATCH",
       "description": "Update a network location.",
-      "link": "https://iotery.io/v1/docs#updateNetworkLocation"
+      "link": "https://iotery.io/v1/docs#updateNetworkNetworkLocation"
     },
     {
       "path": "/networks/:networkUuid/network-locations/:networkLocationUuid",
