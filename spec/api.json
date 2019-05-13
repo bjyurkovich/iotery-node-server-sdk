@@ -268,6 +268,13 @@
       "link": "https://iotery.io/v1/docs#createDeviceNotificationInstance"
     },
     {
+      "path": "/devices/:deviceUuid/settings",
+      "name": "getDeviceSettingList",
+      "method": "GET",
+      "description": "Get a list of settings for a device.",
+      "link": "https://iotery.io/v1/docs#getDeviceSettingList"
+    },
+    {
       "path": "/firmware",
       "name": "createFirmwareRecord",
       "method": "POST",
