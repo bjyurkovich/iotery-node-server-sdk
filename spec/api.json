@@ -639,6 +639,20 @@
       "link": "https://iotery.io/v1/docs#getGrouping"
     },
     {
+      "path": "/groupings/:groupingUuid",
+      "name": "updateGrouping",
+      "method": "PATCH",
+      "description": "Update a grouping.",
+      "link": "https://iotery.io/v1/docs#updateGrouping"
+    },
+    {
+      "path": "/groupings/:groupingUuid",
+      "name": "deleteGrouping",
+      "method": "DELETE",
+      "description": "Delete a grouping by uuid.",
+      "link": "https://iotery.io/v1/docs#deleteGrouping"
+    },
+    {
       "path": "/groupings/:groupingUuid/command-instances",
       "name": "createGroupingBatchedCommands",
       "method": "POST",
@@ -724,17 +738,17 @@
     },
     {
       "path": "/networks/:networkUuid/groupings/:groupingUuid",
-      "name": "updateGrouping",
+      "name": "updateNetworkGrouping",
       "method": "PATCH",
       "description": "Update a network grouping.",
-      "link": "https://iotery.io/v1/docs#updateGrouping"
+      "link": "https://iotery.io/v1/docs#updateNetworkGrouping"
     },
     {
       "path": "/networks/:networkUuid/groupings/:groupingUuid",
-      "name": "deleteGrouping",
+      "name": "deleteNetworkGrouping",
       "method": "DELETE",
       "description": "Delete a network's grouping by uuid.",
-      "link": "https://iotery.io/v1/docs#deleteGrouping"
+      "link": "https://iotery.io/v1/docs#deleteNetworkGrouping"
     },
     {
       "path": "/networks/:networkUuid/groupings/:groupingUuid/child-groupings",
