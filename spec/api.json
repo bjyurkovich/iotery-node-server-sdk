@@ -877,6 +877,27 @@
       "link": "https://iotery.io/v1/docs#deprovisionDevice"
     },
     {
+      "path": "/schedules/:scheduleUuid",
+      "name": "updateSchedule",
+      "method": "PATCH",
+      "description": "Update a schedule.",
+      "link": "https://iotery.io/v1/docs#updateSchedule"
+    },
+    {
+      "path": "/schedules/:scheduleUuid",
+      "name": "deleteSchedule",
+      "method": "DELETE",
+      "description": "Delete a schedule by uuid.",
+      "link": "https://iotery.io/v1/docs#deleteSchedule"
+    },
+    {
+      "path": "/schedules/:scheduleUuid/execute",
+      "name": "executeSchedule",
+      "method": "POST",
+      "description": "Execute a schedule.",
+      "link": "https://iotery.io/v1/docs#executeSchedule"
+    },
+    {
       "path": "/grouping-devices",
       "name": "createGroupingDevice",
       "method": "POST",
