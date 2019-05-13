@@ -878,6 +878,13 @@
     },
     {
       "path": "/schedules/:scheduleUuid",
+      "name": "getSchedule",
+      "method": "GET",
+      "description": "Get a schedule by uuid.",
+      "link": "https://iotery.io/v1/docs#getSchedule"
+    },
+    {
+      "path": "/schedules/:scheduleUuid",
       "name": "updateSchedule",
       "method": "PATCH",
       "description": "Update a schedule.",
