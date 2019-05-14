@@ -170,6 +170,41 @@
       "link": "https://iotery.io/v1/docs#deleteSettingType"
     },
     {
+      "path": "/default-settings",
+      "name": "createDefaultSetting",
+      "method": "POST",
+      "description": "Create a default setting.",
+      "link": "https://iotery.io/v1/docs#createDefaultSetting"
+    },
+    {
+      "path": "/default-settings",
+      "name": "getDefaultSettingList",
+      "method": "GET",
+      "description": "Get a list of default settings.",
+      "link": "https://iotery.io/v1/docs#getDefaultSettingList"
+    },
+    {
+      "path": "/default-settings/:defaultSettingUuid",
+      "name": "getDefaultSetting",
+      "method": "GET",
+      "description": "Get a default setting by uuid.",
+      "link": "https://iotery.io/v1/docs#getDefaultSetting"
+    },
+    {
+      "path": "/default-settings/:defaultSettingUuid",
+      "name": "updateDefaultSetting",
+      "method": "PATCH",
+      "description": "Update a default setting by uuid.",
+      "link": "https://iotery.io/v1/docs#updateDefaultSetting"
+    },
+    {
+      "path": "/default-settings/:defaultSettingUuid",
+      "name": "deleteDefaultSetting",
+      "method": "DELETE",
+      "description": "Delete a default setting by uuid.",
+      "link": "https://iotery.io/v1/docs#deleteDefaultSetting"
+    },
+    {
       "path": "/data-types",
       "name": "createDataType",
       "method": "POST",
