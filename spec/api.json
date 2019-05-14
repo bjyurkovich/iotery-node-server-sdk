@@ -325,6 +325,13 @@
     },
     {
       "path": "/devices/:deviceUuid/settings",
+      "name": "createDeviceSetting",
+      "method": "POST",
+      "description": "Create a setting for a device.",
+      "link": "https://iotery.io/v1/docs#createDeviceSetting"
+    },
+    {
+      "path": "/devices/:deviceUuid/settings",
       "name": "getDeviceSettingList",
       "method": "GET",
       "description": "Get a list of settings for a device.",
