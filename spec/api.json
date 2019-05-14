@@ -261,11 +261,32 @@
       "link": "https://iotery.io/v1/docs#createDeviceCommandInstance"
     },
     {
+      "path": "/devices/:deviceUuid/data",
+      "name": "getDeviceDataList",
+      "method": "GET",
+      "description": "Get a list of data for a device.",
+      "link": "https://iotery.io/v1/docs#getDeviceDataList"
+    },
+    {
+      "path": "/devices/:deviceUuid/events",
+      "name": "getDeviceEventList",
+      "method": "GET",
+      "description": "Get a list of events for a device.",
+      "link": "https://iotery.io/v1/docs#getDeviceEventList"
+    },
+    {
       "path": "/devices/:deviceUuid/notification-instances",
       "name": "createDeviceNotificationInstance",
       "method": "POST",
       "description": "Create a notification instance for a device.",
       "link": "https://iotery.io/v1/docs#createDeviceNotificationInstance"
+    },
+    {
+      "path": "/devices/:deviceUuid/notification-instances",
+      "name": "getDeviceNotificationInstanceList",
+      "method": "GET",
+      "description": "Get a list of notification instances for a device.",
+      "link": "https://iotery.io/v1/docs#getDeviceNotificationInstanceList"
     },
     {
       "path": "/devices/:deviceUuid/settings",
