@@ -46,11 +46,16 @@ api.routes.forEach(e => {
             }
           }
         );
-        if (res.status >= 400) {
-          throw res.error;
+        let output;
+        try {
+          output = await res.json();
+        } catch (err) {
+          throw err;
         }
-
-        return await res.json();
+        if (res.status >= 400) {
+          output = { status: res.status, json: output };
+        }
+        return output;
       };
       break;
     case "POST":
@@ -67,11 +72,17 @@ api.routes.forEach(e => {
             body: JSON.stringify(data)
           }
         );
-        if (res.status >= 400) {
-          throw res.error;
-        }
 
-        return await res.json();
+        let output;
+        try {
+          output = await res.json();
+        } catch (err) {
+          throw err;
+        }
+        if (res.status >= 400) {
+          output = { status: res.status, json: output };
+        }
+        return output;
       };
       break;
     case "PATCH":
@@ -88,11 +99,16 @@ api.routes.forEach(e => {
             body: JSON.stringify(data)
           }
         );
-        if (res.status >= 400) {
-          throw res.error;
+        let output;
+        try {
+          output = await res.json();
+        } catch (err) {
+          throw err;
         }
-
-        return await res.json();
+        if (res.status >= 400) {
+          output = { status: res.status, json: output };
+        }
+        return output;
       };
       break;
     case "DELETE":
@@ -108,11 +124,16 @@ api.routes.forEach(e => {
             }
           }
         );
-        if (res.status >= 400) {
-          throw res.error;
+        let output;
+        try {
+          output = await res.json();
+        } catch (err) {
+          throw err;
         }
-
-        return await res.json();
+        if (res.status >= 400) {
+          output = { status: res.status, json: output };
+        }
+        return output;
       };
       break;
   }
