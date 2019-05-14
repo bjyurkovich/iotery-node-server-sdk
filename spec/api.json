@@ -667,6 +667,20 @@
       "link": "https://iotery.io/v1/docs#createGroupingBatchedCommands"
     },
     {
+      "path": "/groupings/:groupingUuid/devices",
+      "name": "getDeviceListForGrouping",
+      "method": "GET",
+      "description": "Get a list of devices for a grouping.",
+      "link": "https://iotery.io/v1/docs#getDeviceListForGrouping"
+    },
+    {
+      "path": "/groupings/:groupingUuid/devices",
+      "name": "moveDeviceToGrouping",
+      "method": "POST",
+      "description": "Move a device to a grouping.",
+      "link": "https://iotery.io/v1/docs#moveDeviceToGrouping"
+    },
+    {
       "path": "/network-locations/:networkLocationUuid",
       "name": "updateNetworkLocation",
       "method": "PATCH",
@@ -770,20 +784,6 @@
       "method": "POST",
       "description": "Add a child grouping.",
       "link": "https://iotery.io/v1/docs#addChildGrouping"
-    },
-    {
-      "path": "/networks/:networkUuid/groupings/:groupingUuid/devices",
-      "name": "getDeviceListForGrouping",
-      "method": "GET",
-      "description": "Get a list of devices for a grouping.",
-      "link": "https://iotery.io/v1/docs#getDeviceListForGrouping"
-    },
-    {
-      "path": "/networks/:networkUuid/groupings/:groupingUuid/devices",
-      "name": "moveDeviceToGrouping",
-      "method": "POST",
-      "description": "Move a device to a grouping.",
-      "link": "https://iotery.io/v1/docs#moveDeviceToGrouping"
     },
     {
       "path": "/networks/:networkUuid/groupings/:groupingUuid/devices/:deviceUuid",
