@@ -126,16 +126,16 @@ The available resource creation methods are
 The generalized syntax for reading resources looks like:
 
 ```js
-methodName({ input: "parameters" }, { query: "variables" });
+methodName({ input: "parameters" }, { query: { param: "value" } });
 ```
 
 For example, to get a device, the javascript would look like
 
 ```js
-getDeviceByUuid({ deviceUuid: "a-valid-device-uuid" }, { limit: 1 });
+getDeviceByUuid({ deviceUuid: "a-valid-device-uuid" }, { query: { limit: 1 } });
 ```
 
-where `getDeviceByUuid` maps to `methodName`, `deviceUuid` maps to `input`, and `limit` maps to `query` in the generalized form given above.
+where `getDeviceByUuid` maps to `methodName`, `deviceUuid` maps to `input`, and `limit` maps to `param` in the generalized form given above.
 
 The available resource reading methods are
 
