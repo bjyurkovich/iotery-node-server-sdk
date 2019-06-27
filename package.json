@@ -11,7 +11,8 @@
   "author": "bjyurkovich",
   "license": "MIT",
   "dependencies": {
-    "node-fetch": "^2.3.0"
+    "node-fetch": "^2.3.0",
+    "qs": "^6.7.0"
   },
   "devDependencies": {
     "body-parser": "^1.18.3",

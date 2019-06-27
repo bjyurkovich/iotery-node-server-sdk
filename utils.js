@@ -1,3 +1,5 @@
+const qs = require("qs");
+
 module.exports.findParamArguments = function(path, obj) {
   let parts = path.split(/\//);
   let params = parts.filter(p => p.length > 0 && p[0] === ":");
@@ -23,11 +25,7 @@ module.exports.findArguments = function(path) {
 module.exports.generateQueryString = function(opts) {
   let query = "";
   if (opts && opts.query) {
-    query =
-      "?" +
-      Object.keys(opts.query)
-        .map(q => `${q}=${opts.query[q]}`)
-        .join("&");
+    query = "?" + qs.stringify(opts.query, { encode: false });
   }
 
   return query;
