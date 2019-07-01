@@ -835,7 +835,7 @@
       "link": "https://iotery.io/v1/docs#deleteNetworkGrouping"
     },
     {
-      "path": "/networks/:networkUuid/groupings/:groupingUuid/child-groupings",
+      "path": "/groupings/:groupingUuid/child-groupings",
       "name": "getChildGroupingList",
       "method": "GET",
       "description": "Get a list of child groupings for a grouping.",
