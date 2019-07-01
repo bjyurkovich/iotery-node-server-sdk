@@ -240,6 +240,13 @@
       "link": "https://iotery.io/v1/docs#deleteDataType"
     },
     {
+      "path": "/command-instances",
+      "name": "getCommandInstanceList",
+      "method": "GET",
+      "description": "Get a list of command instances.",
+      "link": "https://iotery.io/v1/docs#getCommandInstanceList"
+    },
+    {
       "path": "/devices",
       "name": "createDevice",
       "method": "POST",
@@ -259,13 +266,6 @@
       "method": "POST",
       "description": "Create a set of batched command instances.",
       "link": "https://iotery.io/v1/docs#createBatchedCommandInstances"
-    },
-    {
-      "path": "/devices/unexecuted-command-instances",
-      "name": "getUnexecutedCommandInstanceList",
-      "method": "GET",
-      "description": "Get all unexecuted command instances.",
-      "link": "https://iotery.io/v1/docs#getUnexecutedCommandInstanceList"
     },
     {
       "path": "/devices/:deviceUuid",
