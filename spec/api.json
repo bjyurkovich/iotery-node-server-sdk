@@ -240,6 +240,13 @@
       "link": "https://iotery.io/v1/docs#deleteDataType"
     },
     {
+      "path": "/command-instances",
+      "name": "getCommandInstanceList",
+      "method": "GET",
+      "description": "Get a list of command instances.",
+      "link": "https://iotery.io/v1/docs#getCommandInstanceList"
+    },
+    {
       "path": "/devices",
       "name": "createDevice",
       "method": "POST",
@@ -259,13 +266,6 @@
       "method": "POST",
       "description": "Create a set of batched command instances.",
       "link": "https://iotery.io/v1/docs#createBatchedCommandInstances"
-    },
-    {
-      "path": "/devices/unexecuted-command-instances",
-      "name": "getUnexecutedCommandInstanceList",
-      "method": "GET",
-      "description": "Get all unexecuted command instances.",
-      "link": "https://iotery.io/v1/docs#getUnexecutedCommandInstanceList"
     },
     {
       "path": "/devices/:deviceUuid",
@@ -325,10 +325,10 @@
     },
     {
       "path": "/devices/:deviceUuid/settings",
-      "name": "createDeviceSetting",
+      "name": "createSetting",
       "method": "POST",
       "description": "Create a setting for a device.",
-      "link": "https://iotery.io/v1/docs#createDeviceSetting"
+      "link": "https://iotery.io/v1/docs#createSetting"
     },
     {
       "path": "/devices/:deviceUuid/settings",
@@ -336,6 +336,27 @@
       "method": "GET",
       "description": "Get a list of settings for a device.",
       "link": "https://iotery.io/v1/docs#getDeviceSettingList"
+    },
+    {
+      "path": "/settings/:settingUuid",
+      "name": "getSetting",
+      "method": "GET",
+      "description": "Get a setting by uuid.",
+      "link": "https://iotery.io/v1/docs#getSetting"
+    },
+    {
+      "path": "/settings/:settingUuid",
+      "name": "updateSetting",
+      "method": "PATCH",
+      "description": "Update a setting.",
+      "link": "https://iotery.io/v1/docs#updateSetting"
+    },
+    {
+      "path": "/settings/:settingUuid",
+      "name": "deleteSetting",
+      "method": "DELETE",
+      "description": "Delete a setting by uuid.",
+      "link": "https://iotery.io/v1/docs#deleteSetting"
     },
     {
       "path": "/firmware",
@@ -723,6 +744,13 @@
       "link": "https://iotery.io/v1/docs#deleteGrouping"
     },
     {
+      "path": "/groupings/:groupingUuid/child-groupings",
+      "name": "getChildGroupingList",
+      "method": "GET",
+      "description": "Get a list of child groupings for a grouping.",
+      "link": "https://iotery.io/v1/docs#getChildGroupingList"
+    },
+    {
       "path": "/groupings/:groupingUuid/command-instances",
       "name": "createGroupingBatchedCommands",
       "method": "POST",
@@ -833,13 +861,6 @@
       "method": "DELETE",
       "description": "Delete a network's grouping by uuid.",
       "link": "https://iotery.io/v1/docs#deleteNetworkGrouping"
-    },
-    {
-      "path": "/networks/:networkUuid/groupings/:groupingUuid/child-groupings",
-      "name": "getChildGroupingList",
-      "method": "GET",
-      "description": "Get a list of child groupings for a grouping.",
-      "link": "https://iotery.io/v1/docs#getChildGroupingList"
     },
     {
       "path": "/networks/:networkUuid/groupings/:groupingUuid/child-groupings",
