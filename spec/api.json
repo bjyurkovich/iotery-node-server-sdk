@@ -1113,6 +1113,20 @@
       "method": "DELETE",
       "description": "Delete a webhook action type by uuid.",
       "link": "https://iotery.io/v1/docs#deleteWebhookAction"
+    },
+    {
+      "path": "/webhook-action-types",
+      "name": "getWebhookActionTypeList",
+      "method": "GET",
+      "description": "Get a list of webhook action types.",
+      "link": "https://iotery.io/v1/docs#getWebhookActionTypeList"
+    },
+    {
+      "path": "/webhook-action-types/:webhookActionTypeUuid",
+      "name": "getWebhookActionType",
+      "method": "GET",
+      "description": "Get a webhook action type by uuid.",
+      "link": "https://iotery.io/v1/docs#getWebhookActionType"
     }
   ]
 }
