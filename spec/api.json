@@ -338,6 +338,27 @@
       "link": "https://iotery.io/v1/docs#getDeviceSettingList"
     },
     {
+      "path": "/notification-instances/:notificationInstanceUuid",
+      "name": "getNotificationInstance",
+      "method": "GET",
+      "description": "Get a notification instance by uuid.",
+      "link": "https://iotery.io/v1/docs#getNotificationInstance"
+    },
+    {
+      "path": "/notification-instances/:notificationInstanceUuid",
+      "name": "updateNotificationInstance",
+      "method": "PATCH",
+      "description": "Update a notification instance.",
+      "link": "https://iotery.io/v1/docs#updateNotificationInstance"
+    },
+    {
+      "path": "/notification-instances/:notificationInstanceUuid",
+      "name": "deleteNotificationInstance",
+      "method": "DELETE",
+      "description": "Delete a notification instance by uuid.",
+      "link": "https://iotery.io/v1/docs#deleteNotificationInstance"
+    },
+    {
       "path": "/settings/:settingUuid",
       "name": "getSetting",
       "method": "GET",
