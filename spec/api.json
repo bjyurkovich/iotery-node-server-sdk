@@ -450,39 +450,39 @@
       "link": "https://iotery.io/v1/docs#deleteSeverityType"
     },
     {
-      "path": "/notifications",
-      "name": "createNotification",
+      "path": "/notification-types",
+      "name": "createNotificationType",
       "method": "POST",
-      "description": "Create a notification.",
-      "link": "https://iotery.io/v1/docs#createNotification"
+      "description": "Create a notification type.",
+      "link": "https://iotery.io/v1/docs#createNotificationType"
     },
     {
-      "path": "/notifications",
-      "name": "getNotificationList",
+      "path": "/notification-types",
+      "name": "getNotificationTypeList",
       "method": "GET",
-      "description": "Get a list of available notifications.",
-      "link": "https://iotery.io/v1/docs#getNotificationList"
+      "description": "Get a list of available notification types.",
+      "link": "https://iotery.io/v1/docs#getNotificationTypeList"
     },
     {
-      "path": "/notifications/:notificationUuid",
-      "name": "getNotification",
+      "path": "/notification-types/:notificationTypeUuid",
+      "name": "getNotificationType",
       "method": "GET",
-      "description": "Get a notification by uuid.",
-      "link": "https://iotery.io/v1/docs#getNotification"
+      "description": "Get a notification type by uuid.",
+      "link": "https://iotery.io/v1/docs#getNotificationType"
     },
     {
-      "path": "/notifications/:notificationUuid",
-      "name": "updateNotification",
+      "path": "/notification-types/:notificationTypeUuid",
+      "name": "updateNotificationType",
       "method": "PATCH",
-      "description": "Update a notification by uuid.",
-      "link": "https://iotery.io/v1/docs#updateNotification"
+      "description": "Update a notification type by uuid.",
+      "link": "https://iotery.io/v1/docs#updateNotificationType"
     },
     {
-      "path": "/notifications/:notificationUuid",
-      "name": "deleteNotification",
+      "path": "/notification-types/:notificationTypeUuid",
+      "name": "deleteNotificationType",
       "method": "DELETE",
-      "description": "Delete a notification by uuid.",
-      "link": "https://iotery.io/v1/docs#deleteNotification"
+      "description": "Delete a notification type by uuid.",
+      "link": "https://iotery.io/v1/docs#deleteNotificationType"
     },
     {
       "path": "/priority-types",
