@@ -100,6 +100,20 @@
       "link": "https://iotery.io/v1/docs#unlinkConsumerFromNetwork"
     },
     {
+      "path": "/consumers/:consumerUuid/secrets",
+      "name": "createConsumerSecret",
+      "method": "POST",
+      "description": "Create a consumer secret for authentication.",
+      "link": "https://iotery.io/v1/docs#createConsumerSecret"
+    },
+    {
+      "path": "/consumers/:consumerUuid/secrets",
+      "name": "deleteConsumerSecretList",
+      "method": "DELETE",
+      "description": "Delete all stored consumer secrets.",
+      "link": "https://iotery.io/v1/docs#deleteConsumerSecretList"
+    },
+    {
       "path": "/device-types",
       "name": "createDeviceType",
       "method": "POST",
@@ -483,6 +497,41 @@
       "method": "DELETE",
       "description": "Delete a notification type by uuid.",
       "link": "https://iotery.io/v1/docs#deleteNotificationType"
+    },
+    {
+      "path": "/notification-fields",
+      "name": "createNotificationField",
+      "method": "POST",
+      "description": "Create a notification field.",
+      "link": "https://iotery.io/v1/docs#createNotificationField"
+    },
+    {
+      "path": "/notification-fields",
+      "name": "getNotificationFieldList",
+      "method": "GET",
+      "description": "Get a list of available notification fields.",
+      "link": "https://iotery.io/v1/docs#getNotificationFieldList"
+    },
+    {
+      "path": "/notification-fields/:notificationFieldUuid",
+      "name": "getNotificationField",
+      "method": "GET",
+      "description": "Get a notification field by uuid.",
+      "link": "https://iotery.io/v1/docs#getNotificationField"
+    },
+    {
+      "path": "/notification-fields/:notificationFieldUuid",
+      "name": "updateNotificationField",
+      "method": "PATCH",
+      "description": "Update a notification field by uuid.",
+      "link": "https://iotery.io/v1/docs#updateNotificationField"
+    },
+    {
+      "path": "/notification-fields/:notificationFieldUuid",
+      "name": "deleteNotificationField",
+      "method": "DELETE",
+      "description": "Delete a notification field by uuid.",
+      "link": "https://iotery.io/v1/docs#deleteNotificationField"
     },
     {
       "path": "/priority-types",
