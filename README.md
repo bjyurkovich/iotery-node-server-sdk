@@ -85,8 +85,8 @@ The available resource creation methods are
 | linkConsumerToNetwork | consumerUuid | [link](https://iotery.io/docs/account-manager#tag/Consumers/paths/~1consumers~1:consumerUuid~1networks/post) | Link a consumer to a network. |
 | createConsumerSecret | consumerUuid | [link](https://iotery.io/docs/account-manager#tag/Consumers/paths/~1consumers~1:consumerUuid~1secrets/post) | Create a consumer secret for authentication. |
 | createDeviceType |  | [link](https://iotery.io/docs/account-manager#tag/Device-Types/paths/~1device-types/post) | Create a device type. |
-| createSettingType |  | [link](https://iotery.io/docs/account-manager#tag/Device-Setting Types/paths/~1setting-types/post) | Create a setting type. |
-| createDefaultSetting |  | [link](https://iotery.io/docs/account-manager#tag/Device-Default Settings/paths/~1default-settings/post) | Create a default setting. |
+| createSettingType |  | [link](https://iotery.io/docs/account-manager#tag/Device-Setting-Types/paths/~1setting-types/post) | Create a setting type. |
+| createDefaultSetting |  | [link](https://iotery.io/docs/account-manager#tag/Device-Default-Settings/paths/~1default-settings/post) | Create a default setting. |
 | createDataType |  | [link](https://iotery.io/docs/account-manager#tag/Data-Types/paths/~1data-types/post) | Create a data type. |
 | createDevice |  | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices/post) | Create a device. |
 | createBatchedCommandInstances |  | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1command-instances/post) | Create a set of batched command instances. |
@@ -95,10 +95,10 @@ The available resource creation methods are
 | createDeviceNotificationInstance | deviceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid~1notification-instances/post) | Create a notification instance for a device. |
 | createSetting | deviceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid~1settings/post) | Create a setting for a device. |
 | createFirmwareRecord |  | [link](https://iotery.io/docs/account-manager#tag/Firmware/paths/~1firmware/post) | Create a firmware record. |
-| createSeverityType |  | [link](https://iotery.io/docs/account-manager#tag/Notification-Severity Types/paths/~1severity-types/post) | Create a severity type. |
+| createSeverityType |  | [link](https://iotery.io/docs/account-manager#tag/Notification-Severity-Types/paths/~1severity-types/post) | Create a severity type. |
 | createNotificationType |  | [link](https://iotery.io/docs/account-manager#tag/Notification-Types/paths/~1notification-types/post) | Create a notification type. |
 | createNotificationField |  | [link](https://iotery.io/docs/account-manager#tag/Notification-Fields/paths/~1notification-fields/post) | Create a notification field. |
-| createPriorityType |  | [link](https://iotery.io/docs/account-manager#tag/Command-Priority Types/paths/~1priority-types/post) | Create a priority type. |
+| createPriorityType |  | [link](https://iotery.io/docs/account-manager#tag/Command-Priority-Types/paths/~1priority-types/post) | Create a priority type. |
 | createCommandType |  | [link](https://iotery.io/docs/account-manager#tag/Command-Types/paths/~1command-types/post) | Create a command type. |
 | createCommandField |  | [link](https://iotery.io/docs/account-manager#tag/Command-Fields/paths/~1command-fields/post) | Create a command field. |
 | createEventType |  | [link](https://iotery.io/docs/account-manager#tag/Event-Types/paths/~1event-types/post) | Create an event type. |
@@ -144,16 +144,16 @@ The available resource reading methods are
 
 |    `methodName`    | `input` | link |  `description`
 |:-----------:|:-----------:|:-----------:|:-----------:|
-| getHealthCheckResult |  | [link](https://iotery.io/docs/account-manager#tag/Iotery-Health Check/paths/~1health-check/get) | Get the result of a server health check. |
+| getHealthCheckResult |  | [link](https://iotery.io/docs/account-manager#tag/Iotery-Health-Check/paths/~1health-check/get) | Get the result of a server health check. |
 | getAccountManager | userUuid | [link](https://iotery.io/docs/account-manager#tag/Accout-Managers/paths/~1account-managers~1:userUuid/get) | Get an account manager by uuid. |
 | getConsumerList |  | [link](https://iotery.io/docs/account-manager#tag/Consumers/paths/~1consumers/get) | Get a list of available consumers. |
 | getConsumer | consumerUuid | [link](https://iotery.io/docs/account-manager#tag/Consumers/paths/~1consumers~1:consumerUuid/get) | Get a consumer by uuid. |
 | getDeviceTypeList |  | [link](https://iotery.io/docs/account-manager#tag/Device-Types/paths/~1device-types/get) | Get a list of available device types. |
 | getDeviceType | deviceTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Device-Types/paths/~1device-types~1:deviceTypeUuid/get) | Get a device type by uuid. |
-| getSettingTypeList |  | [link](https://iotery.io/docs/account-manager#tag/Device-Setting Types/paths/~1setting-types/get) | Get a list of available setting types. |
-| getSettingType | settingTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Device-Setting Types/paths/~1setting-types~1:settingTypeUuid/get) | Get a setting type by uuid. |
-| getDefaultSettingList |  | [link](https://iotery.io/docs/account-manager#tag/Device-Default Settings/paths/~1default-settings/get) | Get a list of default settings. |
-| getDefaultSetting | defaultSettingUuid | [link](https://iotery.io/docs/account-manager#tag/Device-Default Settings/paths/~1default-settings~1:defaultSettingUuid/get) | Get a default setting by uuid. |
+| getSettingTypeList |  | [link](https://iotery.io/docs/account-manager#tag/Device-Setting-Types/paths/~1setting-types/get) | Get a list of available setting types. |
+| getSettingType | settingTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Device-Setting-Types/paths/~1setting-types~1:settingTypeUuid/get) | Get a setting type by uuid. |
+| getDefaultSettingList |  | [link](https://iotery.io/docs/account-manager#tag/Device-Default-Settings/paths/~1default-settings/get) | Get a list of default settings. |
+| getDefaultSetting | defaultSettingUuid | [link](https://iotery.io/docs/account-manager#tag/Device-Default-Settings/paths/~1default-settings~1:defaultSettingUuid/get) | Get a default setting by uuid. |
 | getDataTypeList |  | [link](https://iotery.io/docs/account-manager#tag/Data-Types/paths/~1data-types/get) | Get a list of available data types. |
 | getDataType | dataTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Data-Types/paths/~1data-types~1:dataTypeUuid/get) | Get a data type by uuid. |
 | getCommandInstanceList |  | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1command-instances/get) | Get a list of command instances. |
@@ -167,14 +167,14 @@ The available resource reading methods are
 | getSetting | settingUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1settings~1:settingUuid/get) | Get a setting by uuid. |
 | getFirmwareRecordList |  | [link](https://iotery.io/docs/account-manager#tag/Firmware/paths/~1firmware/get) | Get a list of firmware records. |
 | getFirmwareRecord | firmwareUuid | [link](https://iotery.io/docs/account-manager#tag/Firmware/paths/~1firmware~1:firmwareUuid/get) | Get a firmware record by uuid. |
-| getSeverityTypeList |  | [link](https://iotery.io/docs/account-manager#tag/Notification-Severity Types/paths/~1severity-types/get) | Get a list of available severity types. |
-| getSeverityType | severityTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Notification-Severity Types/paths/~1severity-types~1:severityTypeUuid/get) | Delete a severity type by uuid. |
+| getSeverityTypeList |  | [link](https://iotery.io/docs/account-manager#tag/Notification-Severity-Types/paths/~1severity-types/get) | Get a list of available severity types. |
+| getSeverityType | severityTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Notification-Severity-Types/paths/~1severity-types~1:severityTypeUuid/get) | Delete a severity type by uuid. |
 | getNotificationTypeList |  | [link](https://iotery.io/docs/account-manager#tag/Notification-Types/paths/~1notification-types/get) | Get a list of available notification types. |
 | getNotificationType | notificationTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Notification-Types/paths/~1notification-types~1:notificationTypeUuid/get) | Get a notification type by uuid. |
 | getNotificationFieldList |  | [link](https://iotery.io/docs/account-manager#tag/Notification-Fields/paths/~1notification-fields/get) | Get a list of available notification fields. |
 | getNotificationField | notificationFieldUuid | [link](https://iotery.io/docs/account-manager#tag/Notification-Fields/paths/~1notification-fields~1:notificationFieldUuid/get) | Get a notification field by uuid. |
-| getPriorityTypeList |  | [link](https://iotery.io/docs/account-manager#tag/Command-Priority Types/paths/~1priority-types/get) | Get a list of available priority types. |
-| getPriorityType | priorityTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Command-Priority Types/paths/~1priority-types~1:priorityTypeUuid/get) | Get a priority type by uuid. |
+| getPriorityTypeList |  | [link](https://iotery.io/docs/account-manager#tag/Command-Priority-Types/paths/~1priority-types/get) | Get a list of available priority types. |
+| getPriorityType | priorityTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Command-Priority-Types/paths/~1priority-types~1:priorityTypeUuid/get) | Get a priority type by uuid. |
 | getCommandTypeList |  | [link](https://iotery.io/docs/account-manager#tag/Command-Types/paths/~1command-types/get) | Get a list of available command types. |
 | getCommandType | commandTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Command-Types/paths/~1command-types~1:commandTypeUuid/get) | Get a command type by uuid. |
 | getCommandFieldList |  | [link](https://iotery.io/docs/account-manager#tag/Command-Fields/paths/~1command-fields/get) | Get a list of available command fields. |
@@ -235,17 +235,17 @@ The available update methods are
 | updateAccountManager | userUuid | [link](https://iotery.io/docs/account-manager#tag/Accout-Managers/paths/~1account-managers~1:userUuid/patch) | Update an account manager by uuid. |
 | updateConsumer | consumerUuid | [link](https://iotery.io/docs/account-manager#tag/Consumers/paths/~1consumers~1:consumerUuid/patch) | Update a consumer by uuid. |
 | updateDeviceType | deviceTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Device-Types/paths/~1device-types~1:deviceTypeUuid/patch) | Update a device type by uuid. |
-| updateSettingType | settingTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Device-Setting Types/paths/~1setting-types~1:settingTypeUuid/patch) | Update a setting type by uuid. |
-| updateDefaultSetting | defaultSettingUuid | [link](https://iotery.io/docs/account-manager#tag/Device-Default Settings/paths/~1default-settings~1:defaultSettingUuid/patch) | Update a default setting by uuid. |
+| updateSettingType | settingTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Device-Setting-Types/paths/~1setting-types~1:settingTypeUuid/patch) | Update a setting type by uuid. |
+| updateDefaultSetting | defaultSettingUuid | [link](https://iotery.io/docs/account-manager#tag/Device-Default-Settings/paths/~1default-settings~1:defaultSettingUuid/patch) | Update a default setting by uuid. |
 | updateDataType | dataTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Data-Types/paths/~1data-types~1:dataTypeUuid/patch) | Update a data type by uuid. |
 | updateDevice | deviceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid/patch) | Update a device by uuid. |
 | updateNotificationInstance | notificationInstanceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1notification-instances~1:notificationInstanceUuid/patch) | Update a notification instance. |
 | updateSetting | settingUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1settings~1:settingUuid/patch) | Update a setting. |
 | updateFirmwareRecord | firmwareUuid | [link](https://iotery.io/docs/account-manager#tag/Firmware/paths/~1firmware~1:firmwareUuid/patch) | Update a firmware record by uuid. |
-| updateSeverityType | severityTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Notification-Severity Types/paths/~1severity-types~1:severityTypeUuid/patch) | Update a severity type by uuid. |
+| updateSeverityType | severityTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Notification-Severity-Types/paths/~1severity-types~1:severityTypeUuid/patch) | Update a severity type by uuid. |
 | updateNotificationType | notificationTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Notification-Types/paths/~1notification-types~1:notificationTypeUuid/patch) | Update a notification type by uuid. |
 | updateNotificationField | notificationFieldUuid | [link](https://iotery.io/docs/account-manager#tag/Notification-Fields/paths/~1notification-fields~1:notificationFieldUuid/patch) | Update a notification field by uuid. |
-| updatePriorityType | priorityTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Command-Priority Types/paths/~1priority-types~1:priorityTypeUuid/patch) | Update a priority type by uuid. |
+| updatePriorityType | priorityTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Command-Priority-Types/paths/~1priority-types~1:priorityTypeUuid/patch) | Update a priority type by uuid. |
 | updateCommandType | commandTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Command-Types/paths/~1command-types~1:commandTypeUuid/patch) | Update a command type by uuid. |
 | updateCommandField | commandFieldUuid | [link](https://iotery.io/docs/account-manager#tag/Command-Fields/paths/~1command-fields~1:commandFieldUuid/patch) | Update a command field by uuid. |
 | updateEventType | eventTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Event-Types/paths/~1event-types~1:eventTypeUuid/patch) | Update an event type by uuid. |
@@ -289,17 +289,17 @@ The available resource deleting methods are
 | unlinkConsumerFromNetwork | consumerUuid,networkUuid | [link](https://iotery.io/docs/account-manager#tag/Consumers/paths/~1consumers~1:consumerUuid~1networks~1:networkUuid/delete) | Unlink a consumer from a network. |
 | deleteConsumerSecretList | consumerUuid | [link](https://iotery.io/docs/account-manager#tag/Consumers/paths/~1consumers~1:consumerUuid~1secrets/delete) | Delete all stored consumer secrets. |
 | deleteDeviceType | deviceTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Device-Types/paths/~1device-types~1:deviceTypeUuid/delete) | Delete a device type by uuid. |
-| deleteSettingType | settingTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Device-Setting Types/paths/~1setting-types~1:settingTypeUuid/delete) | Delete a setting type by uuid. |
-| deleteDefaultSetting | defaultSettingUuid | [link](https://iotery.io/docs/account-manager#tag/Device-Default Settings/paths/~1default-settings~1:defaultSettingUuid/delete) | Delete a default setting by uuid. |
+| deleteSettingType | settingTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Device-Setting-Types/paths/~1setting-types~1:settingTypeUuid/delete) | Delete a setting type by uuid. |
+| deleteDefaultSetting | defaultSettingUuid | [link](https://iotery.io/docs/account-manager#tag/Device-Default-Settings/paths/~1default-settings~1:defaultSettingUuid/delete) | Delete a default setting by uuid. |
 | deleteDataType | dataTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Data-Types/paths/~1data-types~1:dataTypeUuid/delete) | Delete a data type by uuid. |
 | deleteDevice | deviceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid/delete) | Delete a device by uuid. |
 | deleteNotificationInstance | notificationInstanceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1notification-instances~1:notificationInstanceUuid/delete) | Delete a notification instance by uuid. |
 | deleteSetting | settingUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1settings~1:settingUuid/delete) | Delete a setting by uuid. |
 | deleteFirmwareRecord | firmwareUuid | [link](https://iotery.io/docs/account-manager#tag/Firmware/paths/~1firmware~1:firmwareUuid/delete) | Delete a firmware record by uuid. |
-| deleteSeverityType | severityTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Notification-Severity Types/paths/~1severity-types~1:severityTypeUuid/delete) | Delete a severity type by uuid. |
+| deleteSeverityType | severityTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Notification-Severity-Types/paths/~1severity-types~1:severityTypeUuid/delete) | Delete a severity type by uuid. |
 | deleteNotificationType | notificationTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Notification-Types/paths/~1notification-types~1:notificationTypeUuid/delete) | Delete a notification type by uuid. |
 | deleteNotificationField | notificationFieldUuid | [link](https://iotery.io/docs/account-manager#tag/Notification-Fields/paths/~1notification-fields~1:notificationFieldUuid/delete) | Delete a notification field by uuid. |
-| deletePriorityType | priorityTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Command-Priority Types/paths/~1priority-types~1:priorityTypeUuid/delete) | Delete a priority type by uuid. |
+| deletePriorityType | priorityTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Command-Priority-Types/paths/~1priority-types~1:priorityTypeUuid/delete) | Delete a priority type by uuid. |
 | deleteCommandType | commandTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Command-Types/paths/~1command-types~1:commandTypeUuid/delete) | Delete a command type by uuid. |
 | deleteCommandField | commandFieldUuid | [link](https://iotery.io/docs/account-manager#tag/Command-Fields/paths/~1command-fields~1:commandFieldUuid/delete) | Delete a command field by uuid. |
 | deleteEventType | eventTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Event-Types/paths/~1event-types~1:eventTypeUuid/delete) | Delete an event type by uuid. |

@@ -30,9 +30,9 @@ getDocsFromServer().then(docs => {
           link:
             apiDocBase +
             "#tag/" +
-            _.head(methodSpec.tags).replace(" ", "-") +
+            _.head(methodSpec.tags).replace(/ /g, "-") +
             "/paths/" +
-            path.replace(/\//g, "~1") +
+            path.replace(/\//g, "~1").replace(/ /g, "-") +
             "/" +
             m.toLowerCase()
         };

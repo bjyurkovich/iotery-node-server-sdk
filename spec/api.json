@@ -6,7 +6,7 @@
       "name": "getHealthCheckResult",
       "method": "GET",
       "description": "Get the result of a server health check.",
-      "link": "https://iotery.io/docs/account-manager#tag/Iotery-Health Check/paths/~1health-check/get"
+      "link": "https://iotery.io/docs/account-manager#tag/Iotery-Health-Check/paths/~1health-check/get"
     },
     {
       "path": "/account-managers",
@@ -153,70 +153,70 @@
       "name": "createSettingType",
       "method": "POST",
       "description": "Create a setting type.",
-      "link": "https://iotery.io/docs/account-manager#tag/Device-Setting Types/paths/~1setting-types/post"
+      "link": "https://iotery.io/docs/account-manager#tag/Device-Setting-Types/paths/~1setting-types/post"
     },
     {
       "path": "/setting-types",
       "name": "getSettingTypeList",
       "method": "GET",
       "description": "Get a list of available setting types.",
-      "link": "https://iotery.io/docs/account-manager#tag/Device-Setting Types/paths/~1setting-types/get"
+      "link": "https://iotery.io/docs/account-manager#tag/Device-Setting-Types/paths/~1setting-types/get"
     },
     {
       "path": "/setting-types/:settingTypeUuid",
       "name": "getSettingType",
       "method": "GET",
       "description": "Get a setting type by uuid.",
-      "link": "https://iotery.io/docs/account-manager#tag/Device-Setting Types/paths/~1setting-types~1:settingTypeUuid/get"
+      "link": "https://iotery.io/docs/account-manager#tag/Device-Setting-Types/paths/~1setting-types~1:settingTypeUuid/get"
     },
     {
       "path": "/setting-types/:settingTypeUuid",
       "name": "updateSettingType",
       "method": "PATCH",
       "description": "Update a setting type by uuid.",
-      "link": "https://iotery.io/docs/account-manager#tag/Device-Setting Types/paths/~1setting-types~1:settingTypeUuid/patch"
+      "link": "https://iotery.io/docs/account-manager#tag/Device-Setting-Types/paths/~1setting-types~1:settingTypeUuid/patch"
     },
     {
       "path": "/setting-types/:settingTypeUuid",
       "name": "deleteSettingType",
       "method": "DELETE",
       "description": "Delete a setting type by uuid.",
-      "link": "https://iotery.io/docs/account-manager#tag/Device-Setting Types/paths/~1setting-types~1:settingTypeUuid/delete"
+      "link": "https://iotery.io/docs/account-manager#tag/Device-Setting-Types/paths/~1setting-types~1:settingTypeUuid/delete"
     },
     {
       "path": "/default-settings",
       "name": "createDefaultSetting",
       "method": "POST",
       "description": "Create a default setting.",
-      "link": "https://iotery.io/docs/account-manager#tag/Device-Default Settings/paths/~1default-settings/post"
+      "link": "https://iotery.io/docs/account-manager#tag/Device-Default-Settings/paths/~1default-settings/post"
     },
     {
       "path": "/default-settings",
       "name": "getDefaultSettingList",
       "method": "GET",
       "description": "Get a list of default settings.",
-      "link": "https://iotery.io/docs/account-manager#tag/Device-Default Settings/paths/~1default-settings/get"
+      "link": "https://iotery.io/docs/account-manager#tag/Device-Default-Settings/paths/~1default-settings/get"
     },
     {
       "path": "/default-settings/:defaultSettingUuid",
       "name": "getDefaultSetting",
       "method": "GET",
       "description": "Get a default setting by uuid.",
-      "link": "https://iotery.io/docs/account-manager#tag/Device-Default Settings/paths/~1default-settings~1:defaultSettingUuid/get"
+      "link": "https://iotery.io/docs/account-manager#tag/Device-Default-Settings/paths/~1default-settings~1:defaultSettingUuid/get"
     },
     {
       "path": "/default-settings/:defaultSettingUuid",
       "name": "updateDefaultSetting",
       "method": "PATCH",
       "description": "Update a default setting by uuid.",
-      "link": "https://iotery.io/docs/account-manager#tag/Device-Default Settings/paths/~1default-settings~1:defaultSettingUuid/patch"
+      "link": "https://iotery.io/docs/account-manager#tag/Device-Default-Settings/paths/~1default-settings~1:defaultSettingUuid/patch"
     },
     {
       "path": "/default-settings/:defaultSettingUuid",
       "name": "deleteDefaultSetting",
       "method": "DELETE",
       "description": "Delete a default setting by uuid.",
-      "link": "https://iotery.io/docs/account-manager#tag/Device-Default Settings/paths/~1default-settings~1:defaultSettingUuid/delete"
+      "link": "https://iotery.io/docs/account-manager#tag/Device-Default-Settings/paths/~1default-settings~1:defaultSettingUuid/delete"
     },
     {
       "path": "/data-types",
@@ -440,35 +440,35 @@
       "name": "createSeverityType",
       "method": "POST",
       "description": "Create a severity type.",
-      "link": "https://iotery.io/docs/account-manager#tag/Notification-Severity Types/paths/~1severity-types/post"
+      "link": "https://iotery.io/docs/account-manager#tag/Notification-Severity-Types/paths/~1severity-types/post"
     },
     {
       "path": "/severity-types",
       "name": "getSeverityTypeList",
       "method": "GET",
       "description": "Get a list of available severity types.",
-      "link": "https://iotery.io/docs/account-manager#tag/Notification-Severity Types/paths/~1severity-types/get"
+      "link": "https://iotery.io/docs/account-manager#tag/Notification-Severity-Types/paths/~1severity-types/get"
     },
     {
       "path": "/severity-types/:severityTypeUuid",
       "name": "getSeverityType",
       "method": "GET",
       "description": "Delete a severity type by uuid.",
-      "link": "https://iotery.io/docs/account-manager#tag/Notification-Severity Types/paths/~1severity-types~1:severityTypeUuid/get"
+      "link": "https://iotery.io/docs/account-manager#tag/Notification-Severity-Types/paths/~1severity-types~1:severityTypeUuid/get"
     },
     {
       "path": "/severity-types/:severityTypeUuid",
       "name": "updateSeverityType",
       "method": "PATCH",
       "description": "Update a severity type by uuid.",
-      "link": "https://iotery.io/docs/account-manager#tag/Notification-Severity Types/paths/~1severity-types~1:severityTypeUuid/patch"
+      "link": "https://iotery.io/docs/account-manager#tag/Notification-Severity-Types/paths/~1severity-types~1:severityTypeUuid/patch"
     },
     {
       "path": "/severity-types/:severityTypeUuid",
       "name": "deleteSeverityType",
       "method": "DELETE",
       "description": "Delete a severity type by uuid.",
-      "link": "https://iotery.io/docs/account-manager#tag/Notification-Severity Types/paths/~1severity-types~1:severityTypeUuid/delete"
+      "link": "https://iotery.io/docs/account-manager#tag/Notification-Severity-Types/paths/~1severity-types~1:severityTypeUuid/delete"
     },
     {
       "path": "/notification-types",
@@ -545,35 +545,35 @@
       "name": "createPriorityType",
       "method": "POST",
       "description": "Create a priority type.",
-      "link": "https://iotery.io/docs/account-manager#tag/Command-Priority Types/paths/~1priority-types/post"
+      "link": "https://iotery.io/docs/account-manager#tag/Command-Priority-Types/paths/~1priority-types/post"
     },
     {
       "path": "/priority-types",
       "name": "getPriorityTypeList",
       "method": "GET",
       "description": "Get a list of available priority types.",
-      "link": "https://iotery.io/docs/account-manager#tag/Command-Priority Types/paths/~1priority-types/get"
+      "link": "https://iotery.io/docs/account-manager#tag/Command-Priority-Types/paths/~1priority-types/get"
     },
     {
       "path": "/priority-types/:priorityTypeUuid",
       "name": "getPriorityType",
       "method": "GET",
       "description": "Get a priority type by uuid.",
-      "link": "https://iotery.io/docs/account-manager#tag/Command-Priority Types/paths/~1priority-types~1:priorityTypeUuid/get"
+      "link": "https://iotery.io/docs/account-manager#tag/Command-Priority-Types/paths/~1priority-types~1:priorityTypeUuid/get"
     },
     {
       "path": "/priority-types/:priorityTypeUuid",
       "name": "updatePriorityType",
       "method": "PATCH",
       "description": "Update a priority type by uuid.",
-      "link": "https://iotery.io/docs/account-manager#tag/Command-Priority Types/paths/~1priority-types~1:priorityTypeUuid/patch"
+      "link": "https://iotery.io/docs/account-manager#tag/Command-Priority-Types/paths/~1priority-types~1:priorityTypeUuid/patch"
     },
     {
       "path": "/priority-types/:priorityTypeUuid",
       "name": "deletePriorityType",
       "method": "DELETE",
       "description": "Delete a priority type by uuid.",
-      "link": "https://iotery.io/docs/account-manager#tag/Command-Priority Types/paths/~1priority-types~1:priorityTypeUuid/delete"
+      "link": "https://iotery.io/docs/account-manager#tag/Command-Priority-Types/paths/~1priority-types~1:priorityTypeUuid/delete"
     },
     {
       "path": "/command-types",
