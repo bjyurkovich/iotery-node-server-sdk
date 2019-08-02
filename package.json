@@ -1,6 +1,6 @@
 {
   "name": "iotery-server-sdk",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "public": true,
   "main": "index.js",
   "description": "node.js iotery.io server SDK",
