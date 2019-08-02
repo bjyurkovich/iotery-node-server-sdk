@@ -1,6 +1,6 @@
 # iotery.io Server SDK
 
-The node.js iotery.io server SDK is intended to be used on your server in order to interact with the itoery.io IoT Platform. The SDK is a fully featured wrapper for the [REST API](https://somelink_to_swagger_docs).
+The node.js iotery.io server SDK is intended to be used on your server in order to interact with the itoery.io IoT Platform. The SDK is a fully featured wrapper for the [REST API](https://iotery.io/docs).
 
 ## Getting Started
 
