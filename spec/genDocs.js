@@ -80,4 +80,4 @@ template = template.replace("[[POSTS]]", [headers, pos].join("\n"));
 template = template.replace("[[PATCHES]]", [headers, pas].join("\n"));
 template = template.replace("[[DELETES]]", [headers, dels].join("\n"));
 
-fs.writeFileSync(__dirname + "/" + "../README.md", template);
+fs.writeFileSync("./README.md", template);
