@@ -1197,6 +1197,13 @@
       "method": "GET",
       "description": "Get a webhook action type by uuid.",
       "link": "https://iotery.io/v1/docs#getWebhookActionType"
+    },
+    {
+      "path": "/devices/:deviceUuid/clear-unexecuted-command-instances",
+      "name": "clearUnexecutedCommandInstances",
+      "method": "POST",
+      "description": "Clears all unexecuted command instances from a given device",
+      "link": "https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid~1clear-unexecuted-command-instances/post"
     }
   ]
 }

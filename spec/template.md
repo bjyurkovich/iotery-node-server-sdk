@@ -4,7 +4,7 @@ The node.js iotery.io server SDK is intended to be used on your server in order 
 
 ## Getting Started
 
-Setup your free account on [iotery.io]() and go to your [settings dashboard]() to get your server API Key.
+Setup your free account on [iotery.io](https://iotery.io/register) and go to your [dashboard](iotery.io/system) to get your server API Key.
 
 After you get your key, install the SDK:
 
@@ -50,11 +50,11 @@ let temperatureDataType = await iotery.createDataType(
 );
 ```
 
-For a tutorial on setting up a full stack system in 15 minutes using iotery.io, check [this link](medium_article) out.
+For a tutorial on setting up a full stack system in 15 minutes using iotery.io, check [this link](https://dev.to/bjyurkovich/get-started-with-your-iot-devices-using-iotery-io-4c2d) out.
 
 ## API
 
-This SDK simply wraps the [REST API](https://somelink_to_swagger_docs), so more information and specifics can be found there. Since the API is a wrapper around the REST API, the syntax is standard for each of the Create, Read, Update, and Delete operations on iotery.io resources. All methods return a `Promise`.
+This SDK simply wraps the [REST API](https://iotery.io/docs), so more information and specifics can be found there. Since the API is a wrapper around the REST API, the syntax is standard for each of the Create, Read, Update, and Delete operations on iotery.io resources. All methods return a `Promise`.
 
 ### Creating Resources
 
