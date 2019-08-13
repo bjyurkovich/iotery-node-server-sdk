@@ -10,6 +10,8 @@ function Iotery(apiKey, opts) {
 
   if (opts && opts.baseUrl) {
     this.setBaseUrl(opts.baseUrl);
+  } else {
+    this.setBaseUrl("https://api.iotery.io/v1");
   }
 
   if (!apiKey) {

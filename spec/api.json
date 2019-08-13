@@ -331,6 +331,20 @@
       "link": "https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid~1events/get"
     },
     {
+      "path": "/devices/:deviceUuid/ispp-configuration",
+      "name": "getDeviceIsppConfiguration",
+      "method": "GET",
+      "description": "Get an ISPP configuration for a device.",
+      "link": "https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid~1ispp-configuration/get"
+    },
+    {
+      "path": "/devices/:deviceUuid/ispp-configuration",
+      "name": "updateDeviceIsppConfiguration",
+      "method": "PUT",
+      "description": "Update the ISPP configuration for a device.",
+      "link": "https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid~1ispp-configuration/put"
+    },
+    {
       "path": "/devices/:deviceUuid/notification-instances",
       "name": "createDeviceNotificationInstance",
       "method": "POST",

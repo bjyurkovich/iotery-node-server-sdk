@@ -161,6 +161,7 @@ The available resource reading methods are
 | getDevice | deviceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid/get) | Get a device by uuid. |
 | getDeviceDataList | deviceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid~1data/get) | Get a list of data for a device. |
 | getDeviceEventList | deviceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid~1events/get) | Get a list of events for a device. |
+| getDeviceIsppConfiguration | deviceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid~1ispp-configuration/get) | Get an ISPP configuration for a device. |
 | getDeviceNotificationInstanceList | deviceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid~1notification-instances/get) | Get a list of notification instances for a device. |
 | getDeviceSettingList | deviceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid~1settings/get) | Get a list of settings for a device. |
 | getNotificationInstance | notificationInstanceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1notification-instances~1:notificationInstanceUuid/get) | Get a notification instance by uuid. |
