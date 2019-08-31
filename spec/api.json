@@ -814,6 +814,13 @@
       "link": "https://iotery.io/docs/account-manager#tag/Teams/paths/~1teams~1users~1:userUuid/delete"
     },
     {
+      "path": "/teams/:teamUuid/reset",
+      "name": "resetTeam",
+      "method": "POST",
+      "description": "Reset a team by uuid.",
+      "link": "https://iotery.io/docs/account-manager#tag/Teams/paths/~1teams~1:teamUuid~1reset/post"
+    },
+    {
       "path": "/groupings/:groupingUuid",
       "name": "getGrouping",
       "method": "GET",

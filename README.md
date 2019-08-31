@@ -106,6 +106,7 @@ The available resource creation methods are
 | createGroupingType |  | [link](https://iotery.io/docs/account-manager#tag/Grouping-Types/paths/~1grouping-types/post) | Create a grouping type. |
 | createTeam |  | [link](https://iotery.io/docs/account-manager#tag/Teams/paths/~1teams/post) | Create a team. |
 | linkAccountManagerToTeam | userUuid | [link](https://iotery.io/docs/account-manager#tag/Teams/paths/~1teams~1users~1:userUuid/post) | Link account manager to a team. |
+| resetTeam | teamUuid | [link](https://iotery.io/docs/account-manager#tag/Teams/paths/~1teams~1:teamUuid~1reset/post) | Reset a team by uuid. |
 | createGroupingBatchedCommands | groupingUuid | [link](https://iotery.io/docs/account-manager#tag/Networks/paths/~1groupings~1:groupingUuid~1command-instances/post) | Create a set of batched commands for a grouping and all child grouping devices. |
 | moveDeviceToGrouping | groupingUuid | [link](https://iotery.io/docs/account-manager#tag/Networks/paths/~1groupings~1:groupingUuid~1devices/post) | Move a device to a grouping. |
 | createNetwork |  | [link](https://iotery.io/docs/account-manager#tag/Networks/paths/~1networks/post) | Create a network. |
