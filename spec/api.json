@@ -261,6 +261,20 @@
       "link": "https://iotery.io/docs/account-manager#tag/Devices/paths/~1command-instances/get"
     },
     {
+      "path": "/command-instances/:commandInstanceUuid",
+      "name": "getCommandInstance",
+      "method": "GET",
+      "description": "Get a command instance by uuid.",
+      "link": "https://iotery.io/docs/account-manager#tag/Devices/paths/~1command-instances~1:commandInstanceUuid/get"
+    },
+    {
+      "path": "/command-instances/:commandInstanceUuid",
+      "name": "updateCommandInstance",
+      "method": "PATCH",
+      "description": "Update a command instance by uuid.",
+      "link": "https://iotery.io/docs/account-manager#tag/Devices/paths/~1command-instances~1:commandInstanceUuid/patch"
+    },
+    {
       "path": "/devices",
       "name": "createDevice",
       "method": "POST",
@@ -371,6 +385,13 @@
       "method": "GET",
       "description": "Get a list of settings for a device.",
       "link": "https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid~1settings/get"
+    },
+    {
+      "path": "/devices/:deviceUuid/system-events",
+      "name": "getDeviceSystemEventList",
+      "method": "GET",
+      "description": "Get a list of system events for a device.",
+      "link": "https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid~1system-events/get"
     },
     {
       "path": "/notification-instances/:notificationInstanceUuid",
@@ -1225,6 +1246,41 @@
       "method": "GET",
       "description": "Get a webhook action type by uuid.",
       "link": "https://iotery.io/docs/account-manager#tag/Webhooks/paths/~1webhook-action-types~1:webhookActionTypeUuid/get"
+    },
+    {
+      "path": "/qr-codes",
+      "name": "createQrCode",
+      "method": "POST",
+      "description": "Create a QR code.",
+      "link": "https://iotery.io/docs/account-manager#tag/QR-Codes/paths/~1qr-codes/post"
+    },
+    {
+      "path": "/qr-codes",
+      "name": "getQrCodeList",
+      "method": "GET",
+      "description": "Get a list of QR codes.",
+      "link": "https://iotery.io/docs/account-manager#tag/QR-Codes/paths/~1qr-codes/get"
+    },
+    {
+      "path": "/qr-codes/:qrCodeUuid",
+      "name": "getQrCode",
+      "method": "GET",
+      "description": "Get a QR code by uuid.",
+      "link": "https://iotery.io/docs/account-manager#tag/QR-Codes/paths/~1qr-codes~1:qrCodeUuid/get"
+    },
+    {
+      "path": "/qr-codes/:qrCodeUuid",
+      "name": "updateQrCode",
+      "method": "PATCH",
+      "description": "Update a QR code by uuid.",
+      "link": "https://iotery.io/docs/account-manager#tag/QR-Codes/paths/~1qr-codes~1:qrCodeUuid/patch"
+    },
+    {
+      "path": "/qr-codes/:qrCodeUuid",
+      "name": "deleteQrCode",
+      "method": "DELETE",
+      "description": "Delete a QR code by uuid.",
+      "link": "https://iotery.io/docs/account-manager#tag/QR-Codes/paths/~1qr-codes~1:qrCodeUuid/delete"
     }
   ]
 }

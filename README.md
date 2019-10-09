@@ -124,6 +124,7 @@ The available resource creation methods are
 | createGroupingDevice |  | [link](https://iotery.io/docs/account-manager#tag/Links/paths/~1grouping-devices/post) | Create a GroupingDevice link. |
 | createGroupingLink |  | [link](https://iotery.io/docs/account-manager#tag/Links/paths/~1grouping-links/post) | Create a GroupingLink. |
 | createWebhookAction |  | [link](https://iotery.io/docs/account-manager#tag/Webhooks/paths/~1webhook-actions/post) | Create a webhook action. |
+| createQrCode |  | [link](https://iotery.io/docs/account-manager#tag/QR-Codes/paths/~1qr-codes/post) | Create a QR code. |
 
 ### Reading Resources
 
@@ -158,6 +159,7 @@ The available resource reading methods are
 | getDataTypeList |  | [link](https://iotery.io/docs/account-manager#tag/Data-Types/paths/~1data-types/get) | Get a list of available data types. |
 | getDataType | dataTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Data-Types/paths/~1data-types~1:dataTypeUuid/get) | Get a data type by uuid. |
 | getCommandInstanceList |  | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1command-instances/get) | Get a list of command instances. |
+| getCommandInstance | commandInstanceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1command-instances~1:commandInstanceUuid/get) | Get a command instance by uuid. |
 | getDeviceList |  | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices/get) | Get a list of devices. |
 | getDevice | deviceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid/get) | Get a device by uuid. |
 | getDeviceDataList | deviceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid~1data/get) | Get a list of data for a device. |
@@ -165,6 +167,7 @@ The available resource reading methods are
 | getDeviceIsppConfiguration | deviceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid~1ispp-configuration/get) | Get an ISPP configuration for a device. |
 | getDeviceNotificationInstanceList | deviceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid~1notification-instances/get) | Get a list of notification instances for a device. |
 | getDeviceSettingList | deviceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid~1settings/get) | Get a list of settings for a device. |
+| getDeviceSystemEventList | deviceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid~1system-events/get) | Get a list of system events for a device. |
 | getNotificationInstance | notificationInstanceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1notification-instances~1:notificationInstanceUuid/get) | Get a notification instance by uuid. |
 | getSetting | settingUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1settings~1:settingUuid/get) | Get a setting by uuid. |
 | getFirmwareRecordList |  | [link](https://iotery.io/docs/account-manager#tag/Firmware/paths/~1firmware/get) | Get a list of firmware records. |
@@ -210,6 +213,8 @@ The available resource reading methods are
 | getWebhookAction | webhookActionUuid | [link](https://iotery.io/docs/account-manager#tag/Webhooks/paths/~1webhook-actions~1:webhookActionUuid/get) | Get a webhook action by uuid. |
 | getWebhookActionTypeList |  | [link](https://iotery.io/docs/account-manager#tag/Webhooks/paths/~1webhook-action-types/get) | Get a list of webhook action types. |
 | getWebhookActionType | webhookActionTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Webhooks/paths/~1webhook-action-types~1:webhookActionTypeUuid/get) | Get a webhook action type by uuid. |
+| getQrCodeList |  | [link](https://iotery.io/docs/account-manager#tag/QR-Codes/paths/~1qr-codes/get) | Get a list of QR codes. |
+| getQrCode | qrCodeUuid | [link](https://iotery.io/docs/account-manager#tag/QR-Codes/paths/~1qr-codes~1:qrCodeUuid/get) | Get a QR code by uuid. |
 
 ### Updating Resources
 
@@ -240,6 +245,7 @@ The available update methods are
 | updateSettingType | settingTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Device-Setting-Types/paths/~1setting-types~1:settingTypeUuid/patch) | Update a setting type by uuid. |
 | updateDefaultSetting | defaultSettingUuid | [link](https://iotery.io/docs/account-manager#tag/Device-Default-Settings/paths/~1default-settings~1:defaultSettingUuid/patch) | Update a default setting by uuid. |
 | updateDataType | dataTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Data-Types/paths/~1data-types~1:dataTypeUuid/patch) | Update a data type by uuid. |
+| updateCommandInstance | commandInstanceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1command-instances~1:commandInstanceUuid/patch) | Update a command instance by uuid. |
 | updateDevice | deviceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1devices~1:deviceUuid/patch) | Update a device by uuid. |
 | updateNotificationInstance | notificationInstanceUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1notification-instances~1:notificationInstanceUuid/patch) | Update a notification instance. |
 | updateSetting | settingUuid | [link](https://iotery.io/docs/account-manager#tag/Devices/paths/~1settings~1:settingUuid/patch) | Update a setting. |
@@ -264,6 +270,7 @@ The available update methods are
 | updateGroupingDevice | groupingDeviceUuid | [link](https://iotery.io/docs/account-manager#tag/Links/paths/~1grouping-devices~1:groupingDeviceUuid/patch) | Update a GroupingDevice link by uuid. |
 | updateGroupingLink | groupingLinkUuid | [link](https://iotery.io/docs/account-manager#tag/Links/paths/~1grouping-links~1:groupingLinkUuid/patch) | Update a GroupingLink by uuid. |
 | updateWebhookAction | webhookActionUuid | [link](https://iotery.io/docs/account-manager#tag/Webhooks/paths/~1webhook-actions~1:webhookActionUuid/patch) | Update a webhook action by uuid. |
+| updateQrCode | qrCodeUuid | [link](https://iotery.io/docs/account-manager#tag/QR-Codes/paths/~1qr-codes~1:qrCodeUuid/patch) | Update a QR code by uuid. |
 
 ### Deleting Resources
 
@@ -319,6 +326,7 @@ The available resource deleting methods are
 | deleteGroupingDevice | groupingDeviceUuid | [link](https://iotery.io/docs/account-manager#tag/Links/paths/~1grouping-devices~1:groupingDeviceUuid/delete) | Delete a GroupingDevice link by uuid. |
 | deleteGroupingLink | groupingLinkUuid | [link](https://iotery.io/docs/account-manager#tag/Links/paths/~1grouping-links~1:groupingLinkUuid/delete) | Delete a GroupingLink by uuid. |
 | deleteWebhookAction | webhookActionUuid | [link](https://iotery.io/docs/account-manager#tag/Webhooks/paths/~1webhook-actions~1:webhookActionUuid/delete) | Delete a webhook action type by uuid. |
+| deleteQrCode | qrCodeUuid | [link](https://iotery.io/docs/account-manager#tag/QR-Codes/paths/~1qr-codes~1:qrCodeUuid/delete) | Delete a QR code by uuid. |
 
 ## Contributing
 
