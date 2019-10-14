@@ -4,7 +4,7 @@ The node.js iotery.io server SDK is intended to be used on your server in order 
 
 ## Getting Started
 
-Setup your free account on [iotery.io](https://iotery.io/register) and go to your [dashboard](iotery.io/system) to get your server API Key.
+Setup your free account on [iotery.io](https://iotery.io/register-team-manager) and go to your [dashboard](https://iotery.io/system) to get your server API Key.
 
 After you get your key, install the SDK:
 
