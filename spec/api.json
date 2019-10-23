@@ -821,25 +821,32 @@
       "link": "https://iotery.io/docs/account-manager#tag/Teams/paths/~1teams~1:teamUuid/delete"
     },
     {
-      "path": "/teams/users/:userUuid",
-      "name": "linkAccountManagerToTeam",
-      "method": "POST",
-      "description": "Link account manager to a team.",
-      "link": "https://iotery.io/docs/account-manager#tag/Teams/paths/~1teams~1users~1:userUuid/post"
-    },
-    {
-      "path": "/teams/users/:userUuid",
-      "name": "unlinkAccountManagerFromTeam",
-      "method": "DELETE",
-      "description": "Unlink account manager from a team.",
-      "link": "https://iotery.io/docs/account-manager#tag/Teams/paths/~1teams~1users~1:userUuid/delete"
-    },
-    {
       "path": "/teams/:teamUuid/reset",
       "name": "resetTeam",
       "method": "POST",
       "description": "Reset a team by uuid.",
       "link": "https://iotery.io/docs/account-manager#tag/Teams/paths/~1teams~1:teamUuid~1reset/post"
+    },
+    {
+      "path": "/teams/:teamUuid/users",
+      "name": "linkAccountManagerToTeam",
+      "method": "POST",
+      "description": "Link an account manager to a team.",
+      "link": "https://iotery.io/docs/account-manager#tag/Teams/paths/~1teams~1:teamUuid~1users/post"
+    },
+    {
+      "path": "/teams/:teamUuid/users",
+      "name": "getUserListForTeam",
+      "method": "GET",
+      "description": "Get a list of users for a team.",
+      "link": "https://iotery.io/docs/account-manager#tag/Teams/paths/~1teams~1:teamUuid~1users/get"
+    },
+    {
+      "path": "/teams/:teamUuid/users/:userUuid",
+      "name": "unlinkAccountManagerFromTeam",
+      "method": "DELETE",
+      "description": "Unlink account manager from a team.",
+      "link": "https://iotery.io/docs/account-manager#tag/Teams/paths/~1teams~1:teamUuid~1users~1:userUuid/delete"
     },
     {
       "path": "/groupings/:groupingUuid",

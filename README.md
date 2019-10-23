@@ -105,8 +105,8 @@ The available resource creation methods are
 | createEvent |  | [link](https://iotery.io/docs/account-manager#tag/Events/paths/~1events/post) | Create an event. |
 | createGroupingType |  | [link](https://iotery.io/docs/account-manager#tag/Grouping-Types/paths/~1grouping-types/post) | Create a grouping type. |
 | createTeam |  | [link](https://iotery.io/docs/account-manager#tag/Teams/paths/~1teams/post) | Create a team. |
-| linkAccountManagerToTeam | userUuid | [link](https://iotery.io/docs/account-manager#tag/Teams/paths/~1teams~1users~1:userUuid/post) | Link account manager to a team. |
 | resetTeam | teamUuid | [link](https://iotery.io/docs/account-manager#tag/Teams/paths/~1teams~1:teamUuid~1reset/post) | Reset a team by uuid. |
+| linkAccountManagerToTeam | teamUuid | [link](https://iotery.io/docs/account-manager#tag/Teams/paths/~1teams~1:teamUuid~1users/post) | Link an account manager to a team. |
 | createGroupingBatchedCommands | groupingUuid | [link](https://iotery.io/docs/account-manager#tag/Networks/paths/~1groupings~1:groupingUuid~1command-instances/post) | Create a set of batched commands for a grouping and all child grouping devices. |
 | moveDeviceToGrouping | groupingUuid | [link](https://iotery.io/docs/account-manager#tag/Networks/paths/~1groupings~1:groupingUuid~1devices/post) | Move a device to a grouping. |
 | createNetwork |  | [link](https://iotery.io/docs/account-manager#tag/Networks/paths/~1networks/post) | Create a network. |
@@ -192,6 +192,7 @@ The available resource reading methods are
 | getGroupingType | groupingTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Grouping-Types/paths/~1grouping-types~1:groupingTypeUuid/get) | Get a grouping type by uuid. |
 | getTeamList |  | [link](https://iotery.io/docs/account-manager#tag/Teams/paths/~1teams/get) | Get a list of available teams. |
 | getTeam | teamUuid | [link](https://iotery.io/docs/account-manager#tag/Teams/paths/~1teams~1:teamUuid/get) | Get a team by uuid. |
+| getUserListForTeam | teamUuid | [link](https://iotery.io/docs/account-manager#tag/Teams/paths/~1teams~1:teamUuid~1users/get) | Get a list of users for a team. |
 | getGrouping | groupingUuid | [link](https://iotery.io/docs/account-manager#tag/Networks/paths/~1groupings~1:groupingUuid/get) | Get a grouping by uuid. |
 | getChildGroupingList | groupingUuid | [link](https://iotery.io/docs/account-manager#tag/Networks/paths/~1groupings~1:groupingUuid~1child-groupings/get) | Get a list of child groupings for a grouping. |
 | getDeviceListForGrouping | groupingUuid | [link](https://iotery.io/docs/account-manager#tag/Networks/paths/~1groupings~1:groupingUuid~1devices/get) | Get a list of devices for a grouping. |
@@ -315,7 +316,7 @@ The available resource deleting methods are
 | deleteEvent | eventUuid | [link](https://iotery.io/docs/account-manager#tag/Events/paths/~1events~1:eventUuid/delete) | Delete an event by uuid. |
 | deleteGroupingType | groupingTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Grouping-Types/paths/~1grouping-types~1:groupingTypeUuid/delete) | Delete a grouping type by uuid. |
 | deleteTeam | teamUuid | [link](https://iotery.io/docs/account-manager#tag/Teams/paths/~1teams~1:teamUuid/delete) | Delete a team by uuid. |
-| unlinkAccountManagerFromTeam | userUuid | [link](https://iotery.io/docs/account-manager#tag/Teams/paths/~1teams~1users~1:userUuid/delete) | Unlink account manager from a team. |
+| unlinkAccountManagerFromTeam | teamUuid,userUuid | [link](https://iotery.io/docs/account-manager#tag/Teams/paths/~1teams~1:teamUuid~1users~1:userUuid/delete) | Unlink account manager from a team. |
 | deleteGrouping | groupingUuid | [link](https://iotery.io/docs/account-manager#tag/Networks/paths/~1groupings~1:groupingUuid/delete) | Delete a grouping by uuid. |
 | deleteNetwork | networkUuid | [link](https://iotery.io/docs/account-manager#tag/Networks/paths/~1networks~1:networkUuid/delete) | Delete a network by uuid. |
 | deleteNetworkGrouping | networkUuid,groupingUuid | [link](https://iotery.io/docs/account-manager#tag/Networks/paths/~1networks~1:networkUuid~1groupings~1:groupingUuid/delete) | Delete a network's grouping by uuid. |
