@@ -125,6 +125,8 @@ The available resource creation methods are
 | createGroupingLink |  | [link](https://iotery.io/docs/account-manager#tag/Links/paths/~1grouping-links/post) | Create a GroupingLink. |
 | createWebhookAction |  | [link](https://iotery.io/docs/account-manager#tag/Webhooks/paths/~1webhook-actions/post) | Create a webhook action. |
 | createQrCode |  | [link](https://iotery.io/docs/account-manager#tag/QR-Codes/paths/~1qr-codes/post) | Create a QR code. |
+| createIoteryTemplate |  | [link](https://iotery.io/docs/account-manager#tag/Iotery-Templates/paths/~1iotery-templates/post) | Create an iotery template. |
+| applyIoteryTemplate | ioteryTemplateUuid | [link](https://iotery.io/docs/account-manager#tag/Iotery-Templates/paths/~1iotery-templates~1:ioteryTemplateUuid~1apply/post) | Apply an iotery template by uuid. |
 
 ### Reading Resources
 
@@ -150,6 +152,8 @@ The available resource reading methods are
 | getAccountManager | userUuid | [link](https://iotery.io/docs/account-manager#tag/Accout-Managers/paths/~1account-managers~1:userUuid/get) | Get an account manager by uuid. |
 | getConsumerList |  | [link](https://iotery.io/docs/account-manager#tag/Consumers/paths/~1consumers/get) | Get a list of available consumers. |
 | getConsumer | consumerUuid | [link](https://iotery.io/docs/account-manager#tag/Consumers/paths/~1consumers~1:consumerUuid/get) | Get a consumer by uuid. |
+| getConsumerDeviceList | consumerUuid | [link](https://iotery.io/docs/account-manager#tag/Consumers/paths/~1consumers~1:consumerUuid~1devices/get) | Get a list of devices linked to a consumer. |
+| getConsumerNetworkList | consumerUuid | [link](https://iotery.io/docs/account-manager#tag/Consumers/paths/~1consumers~1:consumerUuid~1networks/get) | Get a list of networks linked to a consumer. |
 | getDeviceTypeList |  | [link](https://iotery.io/docs/account-manager#tag/Device-Types/paths/~1device-types/get) | Get a list of available device types. |
 | getDeviceType | deviceTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Device-Types/paths/~1device-types~1:deviceTypeUuid/get) | Get a device type by uuid. |
 | getSettingTypeList |  | [link](https://iotery.io/docs/account-manager#tag/Device-Setting-Types/paths/~1setting-types/get) | Get a list of available setting types. |
@@ -216,6 +220,8 @@ The available resource reading methods are
 | getWebhookActionType | webhookActionTypeUuid | [link](https://iotery.io/docs/account-manager#tag/Webhooks/paths/~1webhook-action-types~1:webhookActionTypeUuid/get) | Get a webhook action type by uuid. |
 | getQrCodeList |  | [link](https://iotery.io/docs/account-manager#tag/QR-Codes/paths/~1qr-codes/get) | Get a list of QR codes. |
 | getQrCode | qrCodeUuid | [link](https://iotery.io/docs/account-manager#tag/QR-Codes/paths/~1qr-codes~1:qrCodeUuid/get) | Get a QR code by uuid. |
+| getIoteryTemplateList |  | [link](https://iotery.io/docs/account-manager#tag/Iotery-Templates/paths/~1iotery-templates/get) | Get a list of iotery templates. |
+| getIoteryTemplate | ioteryTemplateUuid | [link](https://iotery.io/docs/account-manager#tag/Iotery-Templates/paths/~1iotery-templates~1:ioteryTemplateUuid/get) | Get an iotery template by uuid. |
 
 ### Updating Resources
 
@@ -328,6 +334,7 @@ The available resource deleting methods are
 | deleteGroupingLink | groupingLinkUuid | [link](https://iotery.io/docs/account-manager#tag/Links/paths/~1grouping-links~1:groupingLinkUuid/delete) | Delete a GroupingLink by uuid. |
 | deleteWebhookAction | webhookActionUuid | [link](https://iotery.io/docs/account-manager#tag/Webhooks/paths/~1webhook-actions~1:webhookActionUuid/delete) | Delete a webhook action type by uuid. |
 | deleteQrCode | qrCodeUuid | [link](https://iotery.io/docs/account-manager#tag/QR-Codes/paths/~1qr-codes~1:qrCodeUuid/delete) | Delete a QR code by uuid. |
+| deleteIoteryTemplate | ioteryTemplateUuid | [link](https://iotery.io/docs/account-manager#tag/Iotery-Templates/paths/~1iotery-templates~1:ioteryTemplateUuid/delete) | Delete an iotery template by uuid. |
 
 ## Contributing
 

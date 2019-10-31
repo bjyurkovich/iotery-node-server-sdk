@@ -79,6 +79,13 @@
       "link": "https://iotery.io/docs/account-manager#tag/Consumers/paths/~1consumers~1:consumerUuid~1devices/post"
     },
     {
+      "path": "/consumers/:consumerUuid/devices",
+      "name": "getConsumerDeviceList",
+      "method": "GET",
+      "description": "Get a list of devices linked to a consumer.",
+      "link": "https://iotery.io/docs/account-manager#tag/Consumers/paths/~1consumers~1:consumerUuid~1devices/get"
+    },
+    {
       "path": "/consumers/:consumerUuid/devices/:deviceUuid",
       "name": "unlinkConsumerFromDevice",
       "method": "DELETE",
@@ -91,6 +98,13 @@
       "method": "POST",
       "description": "Link a consumer to a network.",
       "link": "https://iotery.io/docs/account-manager#tag/Consumers/paths/~1consumers~1:consumerUuid~1networks/post"
+    },
+    {
+      "path": "/consumers/:consumerUuid/networks",
+      "name": "getConsumerNetworkList",
+      "method": "GET",
+      "description": "Get a list of networks linked to a consumer.",
+      "link": "https://iotery.io/docs/account-manager#tag/Consumers/paths/~1consumers~1:consumerUuid~1networks/get"
     },
     {
       "path": "/consumers/:consumerUuid/networks/:networkUuid",
@@ -1288,6 +1302,48 @@
       "method": "DELETE",
       "description": "Delete a QR code by uuid.",
       "link": "https://iotery.io/docs/account-manager#tag/QR-Codes/paths/~1qr-codes~1:qrCodeUuid/delete"
+    },
+    {
+      "path": "/iotery-templates",
+      "name": "createIoteryTemplate",
+      "method": "POST",
+      "description": "Create an iotery template.",
+      "link": "https://iotery.io/docs/account-manager#tag/Iotery-Templates/paths/~1iotery-templates/post"
+    },
+    {
+      "path": "/iotery-templates",
+      "name": "getIoteryTemplateList",
+      "method": "GET",
+      "description": "Get a list of iotery templates.",
+      "link": "https://iotery.io/docs/account-manager#tag/Iotery-Templates/paths/~1iotery-templates/get"
+    },
+    {
+      "path": "/iotery-templates/:ioteryTemplateUuid",
+      "name": "getIoteryTemplate",
+      "method": "GET",
+      "description": "Get an iotery template by uuid.",
+      "link": "https://iotery.io/docs/account-manager#tag/Iotery-Templates/paths/~1iotery-templates~1:ioteryTemplateUuid/get"
+    },
+    {
+      "path": "/iotery-templates/:ioteryTemplateUuid",
+      "name": "replaceIoteryTemplate",
+      "method": "PUT",
+      "description": "Replace an iotery template by uuid.",
+      "link": "https://iotery.io/docs/account-manager#tag/Iotery-Templates/paths/~1iotery-templates~1:ioteryTemplateUuid/put"
+    },
+    {
+      "path": "/iotery-templates/:ioteryTemplateUuid",
+      "name": "deleteIoteryTemplate",
+      "method": "DELETE",
+      "description": "Delete an iotery template by uuid.",
+      "link": "https://iotery.io/docs/account-manager#tag/Iotery-Templates/paths/~1iotery-templates~1:ioteryTemplateUuid/delete"
+    },
+    {
+      "path": "/iotery-templates/:ioteryTemplateUuid/apply",
+      "name": "applyIoteryTemplate",
+      "method": "POST",
+      "description": "Apply an iotery template by uuid.",
+      "link": "https://iotery.io/docs/account-manager#tag/Iotery-Templates/paths/~1iotery-templates~1:ioteryTemplateUuid~1apply/post"
     }
   ]
 }
